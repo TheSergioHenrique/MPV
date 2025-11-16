@@ -13,6 +13,69 @@ define professor = Character("Professor", color="#7F8C8D")
 define narrator = Character("")
 define pov = DynamicCharacter("povname", color="#2ECC71")
 
+# ============================================
+# CHARACTER POSITIONS - Evita sobreposição
+# ============================================
+# Para 2 personagens
+transform pos_2_left:
+    xalign 0.25
+    yalign 1.0
+
+transform pos_2_right:
+    xalign 0.75
+    yalign 1.0
+
+# Para 3 personagens
+transform pos_3_left:
+    xalign 0.15
+    yalign 1.0
+
+transform pos_3_center:
+    xalign 0.5
+    yalign 1.0
+
+transform pos_3_right:
+    xalign 0.85
+    yalign 1.0
+
+# Para 4 personagens
+transform pos_4_farleft:
+    xalign 0.1
+    yalign 1.0
+
+transform pos_4_left:
+    xalign 0.35
+    yalign 1.0
+
+transform pos_4_right:
+    xalign 0.65
+    yalign 1.0
+
+transform pos_4_farright:
+    xalign 0.9
+    yalign 1.0
+
+# Para 5 personagens
+transform pos_5_farleft:
+    xalign 0.05
+    yalign 1.0
+
+transform pos_5_left:
+    xalign 0.27
+    yalign 1.0
+
+transform pos_5_center:
+    xalign 0.5
+    yalign 1.0
+
+transform pos_5_right:
+    xalign 0.73
+    yalign 1.0
+
+transform pos_5_farright:
+    xalign 0.95
+    yalign 1.0
+
 # Character Image Definitions
 # ISABELA - Organizada, prestativa, ambiciosa
 image isabela neutral = "characters/isabela_neutral.png"

@@ -313,10 +313,10 @@ label roteiro3_c3:
 
     "11h15 - Biblioteca"
 
-    show isabela neutral at Position(xalign=0.2, yalign=1.0)
-    show lucas neutral at Position(xalign=0.4, yalign=1.0)
-    show camila neutral at Position(xalign=0.6, yalign=1.0)
-    show paulo neutral at Position(xalign=0.8, yalign=1.0)
+    show isabela neutral at pos_4_farleft
+    show lucas neutral at pos_4_left
+    show camila neutral at pos_4_right
+    show paulo neutral at pos_4_farright
 
     "O grupo inteiro se reúne: você, Isabela, Lucas, Camila, Paulo e Rafaela."
 

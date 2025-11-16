@@ -48,11 +48,11 @@ init python in pmui:
         ctc_offset = -60
         ctc_scale = 1
         ctc_xoffset = 900
-        say_dialog_box_bottom_offset = 120
-        say_dialog_box_height = 375
-        say_dialog_box_offset = 60
+        say_dialog_box_bottom_offset = 140
+        say_dialog_box_height = 480
+        say_dialog_box_offset = 65
         say_dialog_box_width = 1080
-        say_dialog_text_size = 60
+        say_dialog_text_size = 56
         say_extra_box_offset = 20
         say_extra_box_rotation = 15
         say_extra_box_yoffset_transform = 20

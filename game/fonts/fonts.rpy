@@ -1,8 +1,9 @@
 init python:
-    config.font_replacement_map["Lato.ttf", False, False] = ("fonts/Lato-Light.ttf", False, False)
-    config.font_replacement_map["Lato.ttf", True, False] = ("fonts/Lato-Bold.ttf", False, False)
-    config.font_replacement_map["Lato.ttf", True, True] = ("fonts/Lato-BoldItalic.ttf", False, False)
-    config.font_replacement_map["Lato.ttf", False, True] = ("fonts/Lato-LightItalic.ttf", False, False)
+    # Roboto font - Excelente suporte para português com cedilha e acentos
+    config.font_replacement_map["Roboto.ttf", False, False] = ("fonts/Roboto-Regular.ttf", False, False)
+    config.font_replacement_map["Roboto.ttf", True, False] = ("fonts/Roboto-Bold.ttf", False, False)
+    config.font_replacement_map["Roboto.ttf", True, True] = ("fonts/Roboto-BoldItalic.ttf", False, False)
+    config.font_replacement_map["Roboto.ttf", False, True] = ("fonts/Roboto-Italic.ttf", False, False)
     # Default font which supports CJK.
     config.font_replacement_map["SourceHanSans.ttf", False, False] = ("fonts/SourceHanSans-Light.ttc", False, False)
     config.font_replacement_map["SourceHanSans.ttf", True, False] = ("fonts/SourceHanSans-Bold.ttc", False, False)
@@ -16,4 +17,4 @@ init python:
     config.custom_text_tags["code"] = coder_font
 
 style default:
-    font FontGroup().add("Lato.ttf", 0x0020, 0x007f).add("SourceHanSans.ttf", 0x0000, 0xffff)
+    font FontGroup().add("Roboto.ttf", 0x0020, 0x024f).add("SourceHanSans.ttf", 0x0000, 0xffff)

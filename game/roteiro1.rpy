@@ -98,10 +98,10 @@ label roteiro1_b1:
 
     "16h00 - Pátio da faculdade"
 
-    show isabela neutral at Position(xalign=0.2, yalign=1.0)
-    show lucas neutral at Position(xalign=0.4, yalign=1.0)
-    show camila neutral at Position(xalign=0.6, yalign=1.0)
-    show paulo neutral at Position(xalign=0.8, yalign=1.0)
+    show isabela neutral at pos_4_farleft
+    show lucas neutral at pos_4_left
+    show camila neutral at pos_4_right
+    show paulo neutral at pos_4_farright
 
     "O grupo se reúne em uma mesa do pátio."
 
@@ -234,19 +234,19 @@ label roteiro1_b4:
 
     pov "Gente, o que vocês acham? Quando podemos começar?"
 
-    show lucas thinking at left
+    show lucas thinking at pos_4_farleft
 
     lucas "Quanto antes melhor. Hoje mesmo seria ideal."
 
-    show rafaela happy at center
+    show rafaela happy at pos_4_left
 
     rafaela "Eu posso hoje! Mas amanhã eu tenho teatro..."
 
-    show paulo neutral at right
+    show paulo neutral at pos_4_right
 
     paulo "Hoje eu tenho treino, mas posso sair mais cedo."
 
-    show camila worried at Position(xalign=0.85, yalign=1.0)
+    show camila worried at pos_4_farright
 
     camila "Eu... eu posso qualquer dia. Vocês decidem."
 
@@ -268,10 +268,10 @@ label roteiro1_c1:
 
     "18h30 - Biblioteca"
 
-    show isabela neutral at Position(xalign=0.2, yalign=1.0)
-    show lucas neutral at Position(xalign=0.4, yalign=1.0)
-    show camila neutral at Position(xalign=0.6, yalign=1.0)
-    show paulo neutral at Position(xalign=0.8, yalign=1.0)
+    show isabela neutral at pos_4_farleft
+    show lucas neutral at pos_4_left
+    show camila neutral at pos_4_right
+    show paulo neutral at pos_4_farright
 
     "O grupo está reunido em uma mesa grande."
 
@@ -320,10 +320,10 @@ label roteiro1_c2:
 
     "18h30 - Biblioteca"
 
-    show isabela happy at Position(xalign=0.2, yalign=1.0)
-    show lucas worried at Position(xalign=0.4, yalign=1.0)
-    show camila happy at Position(xalign=0.6, yalign=1.0)
-    show rafaela happy at Position(xalign=0.8, yalign=1.0)
+    show isabela happy at pos_4_farleft
+    show lucas worried at pos_4_left
+    show camila happy at pos_4_right
+    show rafaela happy at pos_4_farright
 
     pov "Vamos trabalhar juntos. Assim todo mundo aprende tudo."
 
@@ -353,10 +353,10 @@ label roteiro1_c3:
 
     "18h30 - Biblioteca"
 
-    show isabela neutral at Position(xalign=0.2, yalign=1.0)
-    show lucas thinking at Position(xalign=0.4, yalign=1.0)
-    show camila neutral at Position(xalign=0.6, yalign=1.0)
-    show rafaela neutral at Position(xalign=0.8, yalign=1.0)
+    show isabela neutral at pos_4_farleft
+    show lucas thinking at pos_4_left
+    show camila neutral at pos_4_right
+    show rafaela neutral at pos_4_farright
 
     pov "E se a gente dividir em duplas? Assim é mais eficiente que todos juntos, mas ninguém fica sozinho."
 
@@ -736,10 +736,10 @@ label roteiro1_g:
 
     hide professor
 
-    show isabela neutral at Position(xalign=0.2, yalign=1.0)
-    show lucas neutral at Position(xalign=0.4, yalign=1.0)
-    show camila neutral at Position(xalign=0.6, yalign=1.0)
-    show paulo neutral at Position(xalign=0.8, yalign=1.0)
+    show isabela neutral at pos_4_farleft
+    show lucas neutral at pos_4_left
+    show camila neutral at pos_4_right
+    show paulo neutral at pos_4_farright
 
     "O grupo vai à frente."
 

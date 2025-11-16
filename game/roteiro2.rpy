@@ -185,16 +185,16 @@ label roteiro2_c:
 
     "Sala de estudos 3 - uma mesa grande, quadro branco, ar condicionado funcionando."
 
-    show isabela neutral at Position(xalign=0.15, yalign=1.0)
-    show lucas neutral at Position(xalign=0.35, yalign=1.0)
-    show camila neutral at Position(xalign=0.55, yalign=1.0)
-    show paulo neutral at Position(xalign=0.75, yalign=1.0)
+    show isabela neutral at pos_5_farleft
+    show lucas neutral at pos_5_left
+    show camila neutral at pos_5_center
+    show paulo neutral at pos_5_right
 
     "O grupo está reunido. Livros, cadernos, canetas e notebooks espalhados pela mesa."
 
     "Rafaela chega atrasada com uma sacola."
 
-    show rafaela happy at Position(xalign=0.95, yalign=1.0)
+    show rafaela happy at pos_5_farright
 
     rafaela "Cheguei! E trouxe café, energético e chocolate!"
 
@@ -221,10 +221,10 @@ label roteiro2_c:
 
     scene bg library with fade
 
-    show isabela neutral at Position(xalign=0.15, yalign=1.0)
-    show lucas thinking at Position(xalign=0.35, yalign=1.0)
-    show camila worried at Position(xalign=0.55, yalign=1.0)
-    show paulo neutral at Position(xalign=0.75, yalign=1.0)
+    show isabela neutral at pos_4_farleft
+    show lucas thinking at pos_4_left
+    show camila worried at pos_4_right
+    show paulo neutral at pos_4_farright
 
     "Duas horas e meia depois..."
 

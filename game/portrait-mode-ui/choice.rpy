@@ -35,7 +35,7 @@ screen choice(items):
     else:
         style_prefix "choicesay"
 
-    zorder 40
+    zorder 50
     frame:
         vbox:
             for i in items:
@@ -88,8 +88,8 @@ style choice_frame:
 
 style choicesay_frame is choice_frame:
     yalign 1.0
-    bottom_padding pmui.scale_p(220 + 75)
-    yoffset int(-240.0  * pmui.scale)
+    bottom_padding pmui.scale_p(480 + 140)
+    yoffset int(-480.0  * pmui.scale)
 
 style choice_button is default:
     selected_background "choice selected frame"

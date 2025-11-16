@@ -76,9 +76,9 @@ label prologo_2a:
     "Ela puxa você para perto dos outros três."
 
     hide rafaela
-    show rafaela happy at left
-    show isabela neutral at truecenter
-    show lucas thinking at right
+    show rafaela happy at pos_4_farleft
+    show isabela neutral at pos_4_left
+    show lucas thinking at pos_4_right
     with dissolve
 
     rafaela "Essa é Isabela, Lucas e Paulo. Todos de Ambiental!"
@@ -91,7 +91,7 @@ label prologo_2a:
 
     lucas "A1-203. Cheguei cedo pra conferir."
 
-    show paulo happy at Position(xalign=0.85, yalign=1.0)
+    show paulo happy at pos_4_farright
 
     paulo "Esse cara já decorou o campus todo. Eu mal lembro onde desci do busão."
 
@@ -104,15 +104,15 @@ label prologo_2a:
     hide rafaela
     with dissolve
 
-    show isabela happy at center
+    show isabela happy at pos_3_center
 
     isabela "Você tá animada? Eu mal dormi essa noite."
 
-    show paulo happy at right
+    show paulo happy at pos_3_right
 
     paulo "Eu tô mais é com fome. Alguém sabe se a cantina abre cedo?"
 
-    show lucas thinking at left
+    show lucas thinking at pos_3_left
 
     lucas "Foco, gente. A primeira impressão conta."
 
@@ -170,9 +170,9 @@ label prologo_2b:
     "Ela te puxa gentilmente para perto dos outros."
 
     hide rafaela
-    show rafaela happy at left
-    show isabela neutral at truecenter
-    show lucas neutral at right
+    show rafaela happy at pos_4_farleft
+    show isabela neutral at pos_4_left
+    show lucas neutral at pos_4_right
     with dissolve
 
     rafaela "Pessoal, mais uma da nossa turma!"
@@ -181,7 +181,7 @@ label prologo_2b:
 
     lucas "Lucas."
 
-    show paulo happy at Position(xalign=0.85, yalign=1.0)
+    show paulo happy at pos_4_farright
 
     paulo "E aí! Paulo aqui. Relaxa, a gente tá tudo perdido igual!"
 
@@ -201,9 +201,9 @@ label prologo_2c:
 
     "Ao entrar no prédio, você encontra o mesmo grupo na frente da sala A1-203."
 
-    show rafaela happy at left
-    show isabela neutral at center
-    show lucas neutral at right
+    show rafaela happy at pos_3_left
+    show isabela neutral at pos_3_center
+    show lucas neutral at pos_3_right
 
     rafaela "Opa! Você é da nossa sala!"
 
@@ -255,8 +255,8 @@ label prologo_3:
 
     "De repente, uma garota de óculos e cabelo preso entra na sala, olhando para os lados com olhar perdido e nervoso."
 
-    show paulo neutral at left
-    show isabela neutral at center
+    show paulo neutral at pos_4_farleft
+    show isabela neutral at pos_4_left
 
     paulo "Ela parece mais perdida que eu."
 
@@ -264,11 +264,11 @@ label prologo_3:
 
     isabela "Será que a gente devia chamar ela?"
 
-    show lucas thinking at right
+    show lucas thinking at pos_4_right
 
     lucas "A aula vai começar. Depois a gente vê isso."
 
-    show rafaela happy at Position(xalign=0.15, yalign=1.0)
+    show rafaela happy at pos_4_farright
 
     rafaela "Gente, vamos chamar! Ninguém merece ficar isolado no primeiro dia."
 
@@ -369,9 +369,9 @@ label prologo_4a:
 
     "Camila pega sua mochila e segue você. Ao chegar no grupo, todos dão um sorriso acolhedor."
 
-    show rafaela happy at left
-    show isabela happy at truecenter
-    show paulo happy at right
+    show rafaela happy at pos_4_farleft
+    show isabela happy at pos_4_left
+    show paulo happy at pos_4_right
 
     rafaela "Oi, Camila! Seja bem-vinda ao caos! Eu sou Rafaela."
 
@@ -379,7 +379,7 @@ label prologo_4a:
 
     paulo "E aí! Paulo. Relaxa, a gente tá tudo perdido igual."
 
-    show lucas neutral at Position(xalign=0.85, yalign=1.0)
+    show lucas neutral at pos_4_farright
 
     "Lucas apenas acena, voltando ao caderno."
 
