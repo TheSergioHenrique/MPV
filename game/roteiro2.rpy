@@ -883,7 +883,7 @@ label roteiro2_epilogo:
 
     $ roteiro2_completo = True
 
-    return
+    jump roteiro3
 
     # ===================
     # ROTA ALTERNATIVA - ESTUDAR SOZINHA

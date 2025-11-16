@@ -40,6 +40,7 @@ default pensamento_critico = 0
 default resiliencia = 0
 default aprendizado_continuo = 0
 default negociacao = 0
+default autocuidado = 0
 
 # ==========================================
 # ACHIEVEMENT/CONQUISTA FLAGS
@@ -48,6 +49,7 @@ default achievements = {
     "primeira_amizade": False,
     "coracao_grupo": False,
     "mediador_natural": False,
+    "mediador_nato": False,
     "estudante_dedicado": False,
     "mestre_tempo": False,
     "lider_nato": False,
@@ -58,8 +60,13 @@ default achievements = {
     "sonhos_maiores": False,
     "equipe_unida": False,
     "trabalho_excelente": False,
+    "trabalho_perfeito": False,
     "nota_maxima": False,
-    "final_perfeito": False
+    "final_perfeito": False,
+    "equilibrio_perfeito": False,
+    "resistencia_mental": False,
+    "sabedoria": False,
+    "amigo_verdadeiro": False
 }
 
 # ==========================================
@@ -139,6 +146,10 @@ init python:
             store.pensamento_critico = min(5, store.pensamento_critico + valor)
         elif skill == "resiliencia":
             store.resiliencia = min(5, store.resiliencia + valor)
+        elif skill == "autocuidado":
+            store.autocuidado = min(5, store.autocuidado + valor)
+        elif skill == "criatividade":
+            store.criatividade = min(5, store.criatividade + valor)
 
     def get_relation_level(personagem):
         """Retorna o nível de relacionamento com descrição"""
@@ -194,6 +205,7 @@ define achievement_names = {
     "primeira_amizade": "Primeira Amizade",
     "coracao_grupo": "Coração do Grupo",
     "mediador_natural": "Mediador Natural",
+    "mediador_nato": "Mediador Nato",
     "estudante_dedicado": "Estudante Dedicado",
     "mestre_tempo": "Mestre do Tempo",
     "lider_nato": "Líder Nato",
@@ -204,6 +216,11 @@ define achievement_names = {
     "sonhos_maiores": "Sonhos Maiores - Isabela",
     "equipe_unida": "Equipe Unida",
     "trabalho_excelente": "Trabalho Excelente",
+    "trabalho_perfeito": "Trabalho Perfeito",
     "nota_maxima": "Nota Máxima",
-    "final_perfeito": "Final Perfeito"
+    "final_perfeito": "Final Perfeito",
+    "equilibrio_perfeito": "Equilíbrio Perfeito",
+    "resistencia_mental": "Resistência Mental",
+    "sabedoria": "Sabedoria",
+    "amigo_verdadeiro": "Amigo Verdadeiro"
 }

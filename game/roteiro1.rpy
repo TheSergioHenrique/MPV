@@ -28,7 +28,7 @@ label roteiro1:
 
     professor "Vocês vão desenvolver um projeto de Cidade Sustentável em grupos de 5 pessoas."
 
-    professor "O trabalho vale 40\\% da nota final e será apresentado daqui a três semanas."
+    professor "O trabalho vale 40%% da nota final e será apresentado daqui a três semanas."
 
     "Murmúrios começam a preencher a sala."
 
@@ -891,4 +891,4 @@ label roteiro1_epilogo:
 
     $ roteiro1_completo = True
 
-    return
+    jump roteiro2

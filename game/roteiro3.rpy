@@ -34,7 +34,7 @@ label roteiro3:
 
     "A sala explode em sussurros nervosos."
 
-    professor "Isso vale 30\% da nota final. Não haverá reposição exceto com atestado médico. Perguntas?"
+    professor "Isso vale 30%% da nota final. Não haverá reposição exceto com atestado médico. Perguntas?"
 
     show paulo worried at left
 

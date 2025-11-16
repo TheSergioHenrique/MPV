@@ -120,3 +120,6 @@ image bg library = "backgrounds/bg_library.jpg"
 image bg cafeteria = "backgrounds/bg_cafeteria.jpg"
 image bg courtyard = "backgrounds/bg_courtyard.jpg"
 image bg corridor = "backgrounds/bg_corridor.jpg"
+
+# WhatsApp background (placeholder - cor verde característica)
+image bg whatsapp = "#128C7E"

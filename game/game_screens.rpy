@@ -345,4 +345,4 @@ screen epilogue_stats():
 
             null height 20
 
-            textbutton "Continuar" action Hide("epilogue_stats") xalign 0.5 xsize 250 ysize 50
+            textbutton "Continuar" action Return() xalign 0.5 xsize 250 ysize 50

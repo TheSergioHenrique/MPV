@@ -469,7 +469,7 @@ label prologo_fim:
 
     $ prologo_completo = True
 
-    return
+    jump roteiro1
 
 # ===================
 # FIM DO PRÓLOGO - Versão Solitária
@@ -494,4 +494,4 @@ label prologo_fim_alone:
 
     $ prologo_completo = True
 
-    return
+    jump roteiro1
