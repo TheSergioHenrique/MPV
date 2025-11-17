@@ -19,17 +19,32 @@ label side_lucas:
 
     "Você encontra Lucas sentado sozinho em uma mesa de canto, com um livro de Física Quântica aberto e uma xícara de café preto fumegando."
 
+    hide isabela
+    hide camila
+    hide paulo
+    hide rafaela
+    hide professor
     show lucas thinking at center
 
     "Ele não percebe sua aproximação. Está sublinhando frases com intensidade."
 
     pov "Posso sentar?"
 
+    hide isabela
+    hide camila
+    hide paulo
+    hide rafaela
+    hide professor
     show lucas neutral
 
     lucas "Ah... sim. Claro."
 
     hide lucas
+    hide isabela
+    hide camila
+    hide paulo
+    hide rafaela
+    hide professor
     show lucas neutral at right
     with move
 
@@ -41,6 +56,11 @@ label side_lucas:
 
     "Pausa desconfortável."
 
+    hide isabela
+    hide camila
+    hide paulo
+    hide rafaela
+    hide professor
     show lucas sad
 
     "Lucas suspira."
@@ -59,6 +79,11 @@ label side_lucas:
 
     lucas "Por isso eu pressiono. Por isso eu exijo. Porque se eu relaxar um segundo... eu afundo."
 
+    hide isabela
+    hide camila
+    hide paulo
+    hide rafaela
+    hide professor
     show lucas worried
 
     "Ele ri sem humor."
@@ -69,6 +94,11 @@ label side_lucas:
 
     pov "Você não precisa ser perfeito pra gente gostar de você, Lucas."
 
+    hide isabela
+    hide camila
+    hide paulo
+    hide rafaela
+    hide professor
     show lucas neutral
 
     "Ele te olha, como se essa frase fosse em língua estrangeira."
@@ -104,10 +134,20 @@ label side_camila:
 
     "Você vê Camila sentada debaixo de uma árvore, desenhando algo em um caderno."
 
+    hide isabela
+    hide lucas
+    hide paulo
+    hide rafaela
+    hide professor
     show camila neutral at center
 
     pov "Oi, Camila! O que você está desenhando?"
 
+    hide isabela
+    hide lucas
+    hide paulo
+    hide rafaela
+    hide professor
     show camila worried
 
     "Ela rapidamente fecha o caderno, vermelha."
@@ -116,6 +156,11 @@ label side_camila:
 
     pov "Posso ver?"
 
+    hide isabela
+    hide lucas
+    hide paulo
+    hide rafaela
+    hide professor
     show camila sad
 
     camila "Eu... não sei se você vai gostar. Eu desenho mangá."
@@ -128,12 +173,22 @@ label side_camila:
 
     pov "Camila... isso está INCRÍVEL!"
 
+    hide isabela
+    hide lucas
+    hide paulo
+    hide rafaela
+    hide professor
     show camila happy
 
     camila "Você... você acha mesmo?"
 
     pov "Sério! Você é muito talentosa!"
 
+    hide isabela
+    hide lucas
+    hide paulo
+    hide rafaela
+    hide professor
     show camila neutral
 
     camila "Eu uso o desenho pra... pra processar as coisas. Quando fico ansiosa, eu desenho."
@@ -142,6 +197,11 @@ label side_camila:
 
     pov "É uma forma linda de se expressar."
 
+    hide isabela
+    hide lucas
+    hide paulo
+    hide rafaela
+    hide professor
     show camila happy
 
     camila "Obrigada... por não achar estranho. Eu nunca mostro pra ninguém."
@@ -185,6 +245,11 @@ label side_rafaela:
 
     scene bg classroom
 
+    hide isabela
+    hide lucas
+    hide camila
+    hide paulo
+    hide professor
     show rafaela neutral at center
 
     "Rafaela se aproxima, ainda com maquiagem de cena."
@@ -193,6 +258,11 @@ label side_rafaela:
 
     pov "Você é incrível, Rafaela! Eu não sabia que você fazia teatro."
 
+    hide isabela
+    hide lucas
+    hide camila
+    hide paulo
+    hide professor
     show rafaela sad
 
     rafaela "Eu... eu comecei na terapia, na verdade."
@@ -209,6 +279,11 @@ label side_rafaela:
 
     pov "Eu te levo a sério, Rafaela."
 
+    hide isabela
+    hide lucas
+    hide camila
+    hide paulo
+    hide professor
     show rafaela happy
 
     rafaela "Obrigada. Isso significa muito."
@@ -244,18 +319,33 @@ label side_paulo:
 
     "Depois do jogo, vocês sentam na arquibancada, suados e rindo."
 
+    hide isabela
+    hide lucas
+    hide camila
+    hide rafaela
+    hide professor
     show paulo happy at center
 
     paulo "Você joga bem! Valeu por vir!"
 
     pov "Foi divertido! Você é bom mesmo."
 
+    hide isabela
+    hide lucas
+    hide camila
+    hide rafaela
+    hide professor
     show paulo neutral
 
     paulo "Meu pai jogou semi-profissional. Eu cresci com bola nos pés."
 
     "Ele olha para o horizonte."
 
+    hide isabela
+    hide lucas
+    hide camila
+    hide rafaela
+    hide professor
     show paulo sad
 
     paulo "Ele queria muito que eu fosse jogador. Mas eu... eu queria fazer engenharia."
@@ -270,12 +360,22 @@ label side_paulo:
 
     paulo "Por eles."
 
+    hide isabela
+    hide lucas
+    hide camila
+    hide rafaela
+    hide professor
     show paulo worried
 
     paulo "Por isso eu fico zoando. Pra disfarçar o medo de não ser bom o suficiente academicamente."
 
     pov "Paulo, você é incrível. E seus pais devem estar muito orgulhosos."
 
+    hide isabela
+    hide lucas
+    hide camila
+    hide rafaela
+    hide professor
     show paulo happy
 
     paulo "Valeu. De verdade."
@@ -309,12 +409,22 @@ label side_isabela:
 
     "A biblioteca está quase vazia."
 
+    hide lucas
+    hide camila
+    hide paulo
+    hide rafaela
+    hide professor
     show isabela thinking at center
 
     "Isabela está sozinha em uma mesa, cercada de livros."
 
     pov "Isabela? Você ainda está aqui?"
 
+    hide lucas
+    hide camila
+    hide paulo
+    hide rafaela
+    hide professor
     show isabela neutral
 
     isabela "Ah, oi! Sim... estou terminando um projeto pessoal."
@@ -323,12 +433,22 @@ label side_isabela:
 
     pov "Isso não é matéria da faculdade, é?"
 
+    hide lucas
+    hide camila
+    hide paulo
+    hide rafaela
+    hide professor
     show isabela happy
 
     isabela "Não. É um projeto meu. Estou desenhando um sistema de saneamento sustentável para favelas."
 
     isabela "Eu cresci em uma. Sei como é não ter acesso a água tratada, esgoto adequado..."
 
+    hide lucas
+    hide camila
+    hide paulo
+    hide rafaela
+    hide professor
     show isabela sad
 
     isabela "Por isso eu quero ser engenheira. Não pra ganhar dinheiro. Pra mudar realidades."
@@ -337,6 +457,11 @@ label side_isabela:
 
     pov "Isabela... isso é incrível."
 
+    hide lucas
+    hide camila
+    hide paulo
+    hide rafaela
+    hide professor
     show isabela happy
 
     isabela "É meu sonho. Maior que qualquer nota ou diploma."

@@ -20,6 +20,11 @@ label roteiro3:
 
     "A aula de Termodinâmica acabou de começar."
 
+    hide isabela
+    hide lucas
+    hide camila
+    hide paulo
+    hide rafaela
     show professor at center
 
     professor "Bom dia. Antes de começar a matéria de hoje, tenho um aviso."
@@ -36,6 +41,11 @@ label roteiro3:
 
     professor "Isso vale 30%% da nota final. Não haverá reposição exceto com atestado médico. Perguntas?"
 
+    hide isabela
+    hide lucas
+    hide camila
+    hide rafaela
+    hide professor
     show paulo worried at left
 
     paulo "Professor... mas... hoje??"
@@ -50,7 +60,17 @@ label roteiro3:
 
     hide paulo
 
+    hide isabela
+    hide lucas
+    hide paulo
+    hide rafaela
+    hide professor
     show camila worried at left
+    hide isabela
+    hide camila
+    hide paulo
+    hide rafaela
+    hide professor
     show lucas thinking at right
     with dissolve
 
@@ -61,7 +81,17 @@ label roteiro3:
     hide camila
     hide lucas
 
+    hide isabela
+    hide lucas
+    hide camila
+    hide paulo
+    hide professor
     show rafaela sad at left
+    hide isabela
+    hide lucas
+    hide camila
+    hide rafaela
+    hide professor
     show paulo worried at right
     with dissolve
 
@@ -122,6 +152,11 @@ label roteiro3_b1:
 
     "Seu estômago ronca."
 
+    hide isabela
+    hide lucas
+    hide camila
+    hide rafaela
+    hide professor
     show paulo worried at center
 
     paulo "Isa! Vamos estudar junto? Eu tô pirando aqui."
@@ -193,6 +228,11 @@ label roteiro3_b3:
 
     "Você considera seriamente faltar à prova."
 
+    hide lucas
+    hide camila
+    hide paulo
+    hide rafaela
+    hide professor
     show isabela worried at center
 
     isabela "Ei, você está bem? Você está pálida."
@@ -207,6 +247,11 @@ label roteiro3_b3:
 
             isabela "Eu entendo. Mas você consegue. Vem, vamos estudar juntas. Eu te ajudo."
 
+            hide lucas
+            hide camila
+            hide paulo
+            hide rafaela
+            hide professor
             show isabela happy
 
             $ aumentar_skill("resiliencia", 1)
@@ -278,7 +323,17 @@ label roteiro3_c2:
 
     "11h10 - Biblioteca"
 
+    hide isabela
+    hide lucas
+    hide camila
+    hide rafaela
+    hide professor
     show paulo neutral at left
+    hide lucas
+    hide camila
+    hide paulo
+    hide rafaela
+    hide professor
     show isabela neutral at right
 
     "Você, Paulo e Isabela encontram uma mesa grande."
@@ -313,9 +368,29 @@ label roteiro3_c3:
 
     "11h15 - Biblioteca"
 
+    hide lucas
+    hide camila
+    hide paulo
+    hide rafaela
+    hide professor
     show isabela neutral at pos_4_farleft
+    hide isabela
+    hide camila
+    hide paulo
+    hide rafaela
+    hide professor
     show lucas neutral at pos_4_left
+    hide isabela
+    hide lucas
+    hide paulo
+    hide rafaela
+    hide professor
     show camila neutral at pos_4_right
+    hide isabela
+    hide lucas
+    hide camila
+    hide rafaela
+    hide professor
     show paulo neutral at pos_4_farright
 
     "O grupo inteiro se reúne: você, Isabela, Lucas, Camila, Paulo e Rafaela."
@@ -350,6 +425,11 @@ label roteiro3_c4:
 
     scene bg courtyard
 
+    hide isabela
+    hide lucas
+    hide paulo
+    hide rafaela
+    hide professor
     show camila worried at center
 
     pov "Camila? Você está bem?"
@@ -436,6 +516,11 @@ label roteiro3_final_a:
 
     "Uma semana depois..."
 
+    hide isabela
+    hide lucas
+    hide camila
+    hide paulo
+    hide rafaela
     show professor at center
 
     professor "Isabela, parabéns. Você tirou a maior nota da turma. 9,8."
@@ -444,7 +529,17 @@ label roteiro3_final_a:
 
     hide professor
 
+    hide lucas
+    hide camila
+    hide paulo
+    hide rafaela
+    hide professor
     show isabela happy at left
+    hide isabela
+    hide camila
+    hide paulo
+    hide rafaela
+    hide professor
     show lucas happy at right
 
     lucas "Parabéns, Isabela. Você merece."
@@ -468,10 +563,20 @@ label roteiro3_final_b:
 
     "Uma semana depois..."
 
+    hide lucas
+    hide camila
+    hide paulo
+    hide rafaela
+    hide professor
     show isabela happy at center
 
     isabela "8,5! Não é a maior nota, mas tô feliz!"
 
+    hide isabela
+    hide lucas
+    hide camila
+    hide rafaela
+    hide professor
     show paulo happy at right
 
     paulo "Eu tirei 7,5! Passei! Valeu por ter estudado comigo, Isa!"
@@ -496,6 +601,11 @@ label roteiro3_final_c:
 
     pov "Passei... mas poderia ter ido melhor."
 
+    hide isabela
+    hide lucas
+    hide paulo
+    hide rafaela
+    hide professor
     show camila happy at center
 
     camila "Mas você me ajudou tanto! Eu tirei 7,5 por sua causa!"

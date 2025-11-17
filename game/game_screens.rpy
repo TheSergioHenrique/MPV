@@ -194,7 +194,7 @@ screen achievement_popup(ach_name):
     timer 4.0 action Hide("achievement_popup")
 
 # ==========================================
-# MAIN MENU (UPDATED)
+# MAIN MENU - MOBILE FRIENDLY
 # ==========================================
 
 screen main_menu_custom():
@@ -207,39 +207,285 @@ screen main_menu_custom():
     frame:
         xalign 0.5
         yalign 0.5
+        xpadding 40
+        ypadding 50
+        background "#000000AA"
 
         vbox:
-            spacing 20
+            spacing 35
+            xalign 0.5
 
-            text "MOMENTOS PARA VIDA" size 48 bold True xalign 0.5
+            # Logo/Título
+            text "MOMENTOS PARA VIDA" size 52 bold True xalign 0.5 color "#FFD700"
+            text "Uma jornada de amizades e aprendizado" size 22 xalign 0.5 color "#FFFFFF" italic True
 
             null height 30
 
-            # Main Stories
-            text "▶ HISTÓRIAS PRINCIPAIS" size 24 color "#FFD700"
+            # Botões principais - Design moderno para mobile
+            vbox:
+                spacing 20
+                xalign 0.5
 
-            textbutton "Prólogo: Primeiro Dia de Aula" action Start("prologo")
-            textbutton "Roteiro 1: O Trabalho em Grupo" action Start("roteiro1") sensitive False
-            textbutton "Roteiro 2: A Longa Noite de Estudos" action Start("roteiro2") sensitive False
-            textbutton "Roteiro 3: A Prova Surpresa" action Start("roteiro3")
+                textbutton "▶ NOVO JOGO" action Start("prologo"):
+                    xsize 600
+                    ysize 80
+                    text_size 32
+                    text_bold True
+
+                textbutton "💾 CARREGAR JOGO" action ShowMenu("load"):
+                    xsize 600
+                    ysize 80
+                    text_size 32
+                    text_bold True
+
+                textbutton "🏆 CONQUISTAS" action Show("achievements_screen"):
+                    xsize 600
+                    ysize 80
+                    text_size 32
+                    text_bold True
+
+                textbutton "⚙ CONFIGURAÇÕES" action ShowMenu("preferences"):
+                    xsize 600
+                    ysize 80
+                    text_size 32
+                    text_bold True
+
+# ==========================================
+# ACHIEVEMENTS SCREEN - Tela de Conquistas
+# ==========================================
+
+screen achievements_screen():
+    modal True
+    zorder 100
+
+    # Background escurecido
+    add "#000000CC"
+
+    frame:
+        xalign 0.5
+        yalign 0.5
+        xsize 1000
+        ysize 1800
+        padding (40, 40)
+        background "#1A1A1AEE"
+
+        vbox:
+            spacing 25
+
+            # Cabeçalho
+            hbox:
+                spacing 20
+                xalign 0.5
+
+                text "🏆" size 48
+                text "CONQUISTAS" size 42 bold True color "#FFD700"
+
+            null height 10
+
+            # Contador de conquistas
+            python:
+                total_achievements = len(achievements)
+                unlocked_count = sum(1 for v in achievements.values() if v)
+
+            text "Desbloqueadas: [unlocked_count]/[total_achievements]" size 28 xalign 0.5 color "#FFFFFF"
 
             null height 20
 
-            # Side Content
-            text "★ CONHECER OS PERSONAGENS" size 24 color "#FFD700"
+            # Lista de conquistas com scroll
+            viewport:
+                xsize 920
+                ysize 1400
+                scrollbars "vertical"
+                mousewheel True
+                draggable True
+                pagekeys True
 
-            textbutton "☕ Café com Lucas" action Start("side_lucas")
-            textbutton "🎨 Arte com Camila" action Start("side_camila")
-            textbutton "🎭 Teatro com Rafaela" action Start("side_rafaela")
-            textbutton "⚽ Fut com Paulo" action Start("side_paulo")
-            textbutton "📚 Biblioteca com Isabela" action Start("side_isabela")
+                vbox:
+                    spacing 15
+
+                    # Conquistas de Amizade
+                    text "━━━ AMIZADES ━━━" size 28 color "#FFD700" bold True
+
+                    $ ach_friendships = [
+                        ("primeira_amizade", "👥", "Alcançou nível 3 de amizade com alguém"),
+                        ("coracao_grupo", "❤️", "Alcançou nível 4 de amizade com todos"),
+                        ("amigo_verdadeiro", "💝", "Alcançou nível 5 de amizade com alguém"),
+                    ]
+
+                    for ach_id, icon, desc in ach_friendships:
+                        $ is_unlocked = achievements.get(ach_id, False)
+                        frame:
+                            xsize 880
+                            padding (20, 15)
+                            background ("#2ECC7188" if is_unlocked else "#333333AA")
+
+                            hbox:
+                                spacing 15
+
+                                text icon size 36
+                                vbox:
+                                    spacing 5
+                                    if is_unlocked:
+                                        text "[achievement_names[ach_id]]" size 24 bold True color "#FFFFFF"
+                                        text desc size 18 color "#CCCCCC"
+                                    else:
+                                        text "???" size 24 bold True color "#666666"
+                                        text "Conquista bloqueada" size 18 color "#666666"
+
+                                if is_unlocked:
+                                    text "✓" size 48 color "#2ECC71" xalign 1.0
+
+                    null height 15
+
+                    # Conquistas de Habilidades
+                    text "━━━ HABILIDADES ━━━" size 28 color "#FFD700" bold True
+
+                    $ ach_skills = [
+                        ("mediador_natural", "🤝", "Resolveu primeiro conflito com diplomacia"),
+                        ("mediador_nato", "🕊️", "Alcançou nível 5 em gestão de conflitos"),
+                        ("lider_nato", "👑", "Alcançou nível 5 em liderança"),
+                        ("estudante_dedicado", "📚", "Completou todos os estudos"),
+                        ("mestre_tempo", "⏰", "Alcançou nível 5 em gestão de tempo"),
+                    ]
+
+                    for ach_id, icon, desc in ach_skills:
+                        $ is_unlocked = achievements.get(ach_id, False)
+                        frame:
+                            xsize 880
+                            padding (20, 15)
+                            background ("#3498DB88" if is_unlocked else "#333333AA")
+
+                            hbox:
+                                spacing 15
+
+                                text icon size 36
+                                vbox:
+                                    spacing 5
+                                    if is_unlocked:
+                                        text "[achievement_names[ach_id]]" size 24 bold True color "#FFFFFF"
+                                        text desc size 18 color "#CCCCCC"
+                                    else:
+                                        text "???" size 24 bold True color "#666666"
+                                        text "Conquista bloqueada" size 18 color "#666666"
+
+                                if is_unlocked:
+                                    text "✓" size 48 color "#3498DB" xalign 1.0
+
+                    null height 15
+
+                    # Conquistas de Personagens
+                    text "━━━ CONHECENDO OS AMIGOS ━━━" size 28 color "#FFD700" bold True
+
+                    $ ach_characters = [
+                        ("compreensao_lucas", "☕", "Descobriu a história profunda do Lucas"),
+                        ("artista_oculta", "🎨", "Descobriu o talento artístico da Camila"),
+                        ("por_tras_mascara", "🎭", "Conheceu o lado vulnerável da Rafaela"),
+                        ("pioneiro_familiar", "⚽", "Entendeu os desafios do Paulo"),
+                        ("sonhos_maiores", "📚", "Conheceu as ambições da Isabela"),
+                    ]
+
+                    for ach_id, icon, desc in ach_characters:
+                        $ is_unlocked = achievements.get(ach_id, False)
+                        frame:
+                            xsize 880
+                            padding (20, 15)
+                            background ("#9B59B688" if is_unlocked else "#333333AA")
+
+                            hbox:
+                                spacing 15
+
+                                text icon size 36
+                                vbox:
+                                    spacing 5
+                                    if is_unlocked:
+                                        text "[achievement_names[ach_id]]" size 24 bold True color "#FFFFFF"
+                                        text desc size 18 color "#CCCCCC"
+                                    else:
+                                        text "???" size 24 bold True color "#666666"
+                                        text "Conquista bloqueada" size 18 color "#666666"
+
+                                if is_unlocked:
+                                    text "✓" size 48 color "#9B59B6" xalign 1.0
+
+                    null height 15
+
+                    # Conquistas de Trabalhos
+                    text "━━━ TRABALHOS E PROVAS ━━━" size 28 color "#FFD700" bold True
+
+                    $ ach_work = [
+                        ("equipe_unida", "🤝", "Manteve o grupo unido durante o trabalho"),
+                        ("trabalho_excelente", "📝", "Tirou nota 8+ no trabalho em grupo"),
+                        ("trabalho_perfeito", "💯", "Tirou nota 10 no trabalho em grupo"),
+                        ("nota_maxima", "⭐", "Tirou nota 10 em uma prova"),
+                    ]
+
+                    for ach_id, icon, desc in ach_work:
+                        $ is_unlocked = achievements.get(ach_id, False)
+                        frame:
+                            xsize 880
+                            padding (20, 15)
+                            background ("#F39C1288" if is_unlocked else "#333333AA")
+
+                            hbox:
+                                spacing 15
+
+                                text icon size 36
+                                vbox:
+                                    spacing 5
+                                    if is_unlocked:
+                                        text "[achievement_names[ach_id]]" size 24 bold True color "#FFFFFF"
+                                        text desc size 18 color "#CCCCCC"
+                                    else:
+                                        text "???" size 24 bold True color "#666666"
+                                        text "Conquista bloqueada" size 18 color "#666666"
+
+                                if is_unlocked:
+                                    text "✓" size 48 color "#F39C12" xalign 1.0
+
+                    null height 15
+
+                    # Conquistas Especiais
+                    text "━━━ CONQUISTAS ESPECIAIS ━━━" size 28 color "#FFD700" bold True
+
+                    $ ach_special = [
+                        ("final_perfeito", "🌟", "Alcançou o final perfeito do jogo"),
+                        ("equilibrio_perfeito", "⚖️", "Manteve equilíbrio entre estudos e vida social"),
+                        ("resistencia_mental", "💪", "Superou desafios com resiliência"),
+                        ("sabedoria", "🧠", "Desenvolveu todas as soft skills ao máximo"),
+                    ]
+
+                    for ach_id, icon, desc in ach_special:
+                        $ is_unlocked = achievements.get(ach_id, False)
+                        frame:
+                            xsize 880
+                            padding (20, 15)
+                            background ("#E91E6388" if is_unlocked else "#333333AA")
+
+                            hbox:
+                                spacing 15
+
+                                text icon size 36
+                                vbox:
+                                    spacing 5
+                                    if is_unlocked:
+                                        text "[achievement_names[ach_id]]" size 24 bold True color "#FFFFFF"
+                                        text desc size 18 color "#CCCCCC"
+                                    else:
+                                        text "???" size 24 bold True color "#666666"
+                                        text "Conquista bloqueada" size 18 color "#666666"
+
+                                if is_unlocked:
+                                    text "✓" size 48 color "#E91E63" xalign 1.0
 
             null height 20
 
-            # System options
-            textbutton "❤ Status de Relações" action Show("status_screen")
-            textbutton "⚙ Configurações" action ShowMenu("preferences")
-            textbutton "❌ Sair" action Quit(confirm=True)
+            # Botão fechar
+            textbutton "VOLTAR" action Hide("achievements_screen"):
+                xalign 0.5
+                xsize 400
+                ysize 70
+                text_size 28
+                text_bold True
 
 # ==========================================
 # EPILOGUE STATISTICS SCREEN

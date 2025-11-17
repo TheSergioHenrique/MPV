@@ -107,6 +107,11 @@ label micro2:
     return
 
 label micro2_isabela:
+    hide lucas
+    hide camila
+    hide paulo
+    hide rafaela
+    hide professor
     show isabela happy at center
 
     isabela "Oi! Senta aqui!"
@@ -123,7 +128,17 @@ label micro2_isabela:
     return
 
 label micro2_paulo_rafaela:
+    hide isabela
+    hide lucas
+    hide camila
+    hide rafaela
+    hide professor
     show paulo happy at left
+    hide isabela
+    hide lucas
+    hide camila
+    hide paulo
+    hide professor
     show rafaela happy at right
 
     "A mesa explode em risadas."
@@ -138,6 +153,11 @@ label micro2_paulo_rafaela:
     return
 
 label micro2_camila:
+    hide isabela
+    hide lucas
+    hide paulo
+    hide rafaela
+    hide professor
     show camila neutral at center
 
     camila "Oi! Quer sentar?"
@@ -146,12 +166,22 @@ label micro2_camila:
 
     "Vocês conversam sobre família e inseguranças."
 
+    hide isabela
+    hide lucas
+    hide paulo
+    hide rafaela
+    hide professor
     show camila sad
 
     camila "Às vezes eu sinto que não sou boa o suficiente pra estar aqui..."
 
     pov "Você é incrível, Camila. Não duvide disso."
 
+    hide isabela
+    hide lucas
+    hide paulo
+    hide rafaela
+    hide professor
     show camila happy
 
     camila "Obrigada..."
@@ -242,7 +272,17 @@ label micro5:
 
     "Você vê Lucas e Camila discutindo no corredor."
 
+    hide isabela
+    hide camila
+    hide paulo
+    hide rafaela
+    hide professor
     show lucas worried at left
+    hide isabela
+    hide lucas
+    hide paulo
+    hide rafaela
+    hide professor
     show camila sad at right
 
     lucas "Eu só disse que seu método não é eficiente!"
@@ -286,6 +326,11 @@ label micro6:
 
     "Sexta-feira - 18h"
 
+    hide isabela
+    hide lucas
+    hide camila
+    hide paulo
+    hide professor
     show rafaela happy at center
 
     rafaela "Galera! Vamos pro cinema hoje? Preciso desestressar!"

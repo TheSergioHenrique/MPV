@@ -23,6 +23,10 @@ label prologo:
 
     "De repente, uma voz animada:"
 
+    hide isabela
+    hide lucas
+    hide camila
+    hide paulo
     show rafaela happy at center
 
     rafaela "Oi! Oiii! Você é caloura também?"
@@ -67,6 +71,10 @@ label prologo_2a:
 
     "Você caminha até o grupo com um sorriso."
 
+    hide isabela
+    hide lucas
+    hide camila
+    hide paulo
     show rafaela happy at center
 
     pov "Oi! Sim, sou caloura. Engenharia Ambiental."
@@ -83,14 +91,26 @@ label prologo_2a:
 
     rafaela "Essa é Isabela, Lucas e Paulo. Todos de Ambiental!"
 
+    hide rafaela
+    hide lucas
+    hide camila
+    hide paulo
     show isabela happy
 
     isabela "Prazer! Você já sabe onde é a sala?"
 
+    hide isabela
+    hide rafaela
+    hide camila
+    hide paulo
     show lucas neutral
 
     lucas "A1-203. Cheguei cedo pra conferir."
 
+    hide isabela
+    hide lucas
+    hide rafaela
+    hide camila
     show paulo happy at pos_4_farright
 
     paulo "Esse cara já decorou o campus todo. Eu mal lembro onde desci do busão."
@@ -104,14 +124,26 @@ label prologo_2a:
     hide rafaela
     with dissolve
 
+    hide lucas
+    hide rafaela
+    hide camila
+    hide paulo
     show isabela happy at pos_3_center
 
     isabela "Você tá animada? Eu mal dormi essa noite."
 
+    hide isabela
+    hide lucas
+    hide rafaela
+    hide camila
     show paulo happy at pos_3_right
 
     paulo "Eu tô mais é com fome. Alguém sabe se a cantina abre cedo?"
 
+    hide isabela
+    hide paulo
+    hide rafaela
+    hide camila
     show lucas thinking at pos_3_left
 
     lucas "Foco, gente. A primeira impressão conta."
@@ -163,6 +195,10 @@ label prologo_2b:
 
     "Você acena timidamente e caminha devagar até o grupo."
 
+    hide isabela
+    hide lucas
+    hide camila
+    hide paulo
     show rafaela happy at center
 
     rafaela "Oi! Vem, vem! Não precisa ter vergonha!"
@@ -181,6 +217,10 @@ label prologo_2b:
 
     lucas "Lucas."
 
+    hide isabela
+    hide lucas
+    hide rafaela
+    hide camila
     show paulo happy at pos_4_farright
 
     paulo "E aí! Paulo aqui. Relaxa, a gente tá tudo perdido igual!"
@@ -255,7 +295,14 @@ label prologo_3:
 
     "De repente, uma garota de óculos e cabelo preso entra na sala, olhando para os lados com olhar perdido e nervoso."
 
+    hide lucas
+    hide rafaela
+    hide camila
     show paulo neutral at pos_4_farleft
+    hide lucas
+    hide rafaela
+    hide camila
+    hide paulo
     show isabela neutral at pos_4_left
 
     paulo "Ela parece mais perdida que eu."
@@ -264,10 +311,18 @@ label prologo_3:
 
     isabela "Será que a gente devia chamar ela?"
 
+    hide isabela
+    hide paulo
+    hide rafaela
+    hide camila
     show lucas thinking at pos_4_right
 
     lucas "A aula vai começar. Depois a gente vê isso."
 
+    hide isabela
+    hide lucas
+    hide paulo
+    hide camila
     show rafaela happy at pos_4_farright
 
     rafaela "Gente, vamos chamar! Ninguém merece ficar isolado no primeiro dia."
@@ -310,6 +365,10 @@ label prologo_3_alone:
 
     "De repente, outra garota de óculos entra nervosa e se senta perto de você."
 
+    hide isabela
+    hide lucas
+    hide paulo
+    hide rafaela
     show camila worried at center
 
     "Ela também parece estar sozinha."
@@ -355,6 +414,10 @@ label prologo_4a:
 
     "Você se levanta e caminha até a garota."
 
+    hide isabela
+    hide lucas
+    hide paulo
+    hide rafaela
     show camila worried at center
 
     pov "Oi! A gente tá sentando ali, quer vir junto?"
@@ -379,6 +442,10 @@ label prologo_4a:
 
     paulo "E aí! Paulo. Relaxa, a gente tá tudo perdido igual."
 
+    hide isabela
+    hide paulo
+    hide rafaela
+    hide camila
     show lucas neutral at pos_4_farright
 
     "Lucas apenas acena, voltando ao caderno."

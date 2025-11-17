@@ -1,14 +1,8 @@
-﻿init offset = -1
+init offset = -1
 
 ################################################################################
-## Main and Game Menu Screens
+## Main Menu - Mobile Friendly (BR)
 ################################################################################
-
-## Main Menu screen ############################################################
-##
-## Used to display the main menu when Ren'Py starts.
-##
-## https://www.renpy.org/doc/html/screen_special.html#main-menu
 
 screen main_menu():
 
@@ -19,22 +13,76 @@ screen main_menu():
 
     add gui.main_menu_background
 
-    ## This empty frame darkens the main menu.
+    # Container principal centralizado
     frame:
-        pass
-
-    ## The use statement includes another screen inside this one. The actual
-    ## contents of the main menu are in the navigation screen.
-    use navigation
-
-    if gui.show_name:
+        xalign 0.5
+        yalign 0.5
+        xpadding 50
+        ypadding 60
+        background "#00000000"  # Transparente para focar na logo
 
         vbox:
-            text "[config.name!t]":
-                style "main_menu_title"
+            spacing 40
+            xalign 0.5
 
-            text "[config.version]":
-                style "main_menu_version"
+            # LOGO PRINCIPAL - Elemento central do design
+            add "backgrounds/MPV.png":
+                xalign 0.5
+                zoom 1.0
+
+            null height 15
+
+            # Subtítulo elegante abaixo da logo - Estilizado e legível
+            text "Uma jornada de aprendizado!":
+                size 22
+                xalign 0.5
+                color "#ffffff"
+                bold True
+                outlines [(3, "#000000", 0, 0)]
+
+            null height 25
+
+            # Botões principais - Centralizados
+            vbox:
+                spacing 15
+                xalign 0.5
+
+                textbutton "▶ NOVO JOGO" action Start("prologo"):
+                    xsize 500
+                    ysize 80
+                    xalign 0.5
+                    text_size 28
+                    text_bold True
+                    text_xalign 0.5
+                    background "#FFD700"
+                    hover_background "#FFA000"
+
+                textbutton "💾 CARREGAR JOGO" action ShowMenu("load"):
+                    xsize 500
+                    ysize 80
+                    xalign 0.5
+                    text_size 26
+                    text_xalign 0.5
+                    background "#2ECC71"
+                    hover_background "#27AE60"
+
+                textbutton "🏆 CONQUISTAS" action Show("achievements_screen"):
+                    xsize 500
+                    ysize 80
+                    xalign 0.5
+                    text_size 26
+                    text_xalign 0.5
+                    background "#9B59B6"
+                    hover_background "#8E44AD"
+
+                textbutton "⚙ CONFIGURAÇÕES" action ShowMenu("preferences"):
+                    xsize 500
+                    ysize 80
+                    xalign 0.5
+                    text_size 26
+                    text_xalign 0.5
+                    background "#3498DB"
+                    hover_background "#2980B9"
 
 
 style main_menu_frame is empty

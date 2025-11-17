@@ -78,48 +78,49 @@ transform pos_5_farright:
 
 # Character Image Definitions
 # ISABELA - Organizada, prestativa, ambiciosa
-image isabela neutral = "characters/isabela_neutral.png"
-image isabela happy = "characters/isabela_happy.png"
-image isabela sad = "characters/isabela_sad.png"
-image isabela worried = "characters/isabela_worried.png"
-image isabela thinking = "characters/isabela_thinking.png"
+image isabela neutral = Transform("characters/isabela_neutral.png", zoom=5.0)
+image isabela happy = Transform("characters/isabela_happy.png", zoom=5.0)
+image isabela sad = Transform("characters/isabela_sad.png", zoom=5.0)
+image isabela worried = Transform("characters/isabela_worried.png", zoom=5.0)
+image isabela thinking = Transform("characters/isabela_thinking.png", zoom=5.0)
 
 # LUCAS - Competitivo, inteligente, impaciente
-image lucas neutral = "characters/lucas_neutral.png"
-image lucas happy = "characters/lucas_happy.png"
-image lucas sad = "characters/lucas_sad.png"
-image lucas worried = "characters/lucas_worried.png"
-image lucas thinking = "characters/lucas_thinking.png"
+image lucas neutral = Transform("characters/lucas_neutral.png", zoom=5.0)
+image lucas happy = Transform("characters/lucas_happy.png", zoom=5.0)
+image lucas sad = Transform("characters/lucas_sad.png", zoom=5.0)
+image lucas worried = Transform("characters/lucas_worried.png", zoom=5.0)
+image lucas thinking = Transform("characters/lucas_thinking.png", zoom=5.0)
 
 # CAMILA - Tímida, reflexiva, insegura
-image camila neutral = "characters/camila_neutral.png"
-image camila happy = "characters/camila_happy.png"
-image camila sad = "characters/camila_sad.png"
-image camila worried = "characters/camila_worried.png"
-image camila thinking = "characters/camila_thinking.png"
+image camila neutral = Transform("characters/camila_neutral.png", zoom=5.0)
+image camila happy = Transform("characters/camila_happy.png", zoom=5.0)
+image camila sad = Transform("characters/camila_sad.png", zoom=5.0)
+image camila worried = Transform("characters/camila_worried.png", zoom=5.0)
+image camila thinking = Transform("characters/camila_thinking.png", zoom=5.0)
 
 # PAULO - Desorganizado, bem-humorado, inseguro academicamente
-image paulo neutral = "characters/paulo_neutral.png"
-image paulo happy = "characters/paulo_happy.png"
-image paulo sad = "characters/paulo_sad.png"
-image paulo worried = "characters/paulo_worried.png"
-image paulo thinking = "characters/paulo_thinking.png"
+image paulo neutral = Transform("characters/paulo_neutral.png", zoom=5.0)
+image paulo happy = Transform("characters/paulo_happy.png", zoom=5.0)
+image paulo sad = Transform("characters/paulo_sad.png", zoom=5.0)
+image paulo worried = Transform("characters/paulo_worried.png", zoom=5.0)
+image paulo thinking = Transform("characters/paulo_thinking.png", zoom=5.0)
 
 # RAFAELA - Extrovertida, emocional, dramática
-image rafaela neutral = "characters/rafaela_neutral.png"
-image rafaela happy = "characters/rafaela_happy.png"
-image rafaela sad = "characters/rafaela_sad.png"
-image rafaela worried = "characters/rafaela_worried.png"
-image rafaela thinking = "characters/rafaela_thinking.png"
+image rafaela neutral = Transform("characters/rafaela_neutral.png", zoom=5.0)
+image rafaela happy = Transform("characters/rafaela_happy.png", zoom=5.0)
+image rafaela sad = Transform("characters/rafaela_sad.png", zoom=5.0)
+image rafaela worried = Transform("characters/rafaela_worried.png", zoom=5.0)
+image rafaela thinking = Transform("characters/rafaela_thinking.png", zoom=5.0)
 
-# Background Definitions
-image bg campus = "backgrounds/bg_campus.jpg"
-image bg classroom = "backgrounds/bg_classroom.jpg"
-image bg ru = "backgrounds/bg_ru.jpg"
-image bg library = "backgrounds/bg_library.jpg"
-image bg cafeteria = "backgrounds/bg_cafeteria.jpg"
-image bg courtyard = "backgrounds/bg_courtyard.jpg"
-image bg corridor = "backgrounds/bg_corridor.jpg"
+# Background Definitions - Scaled to cover full screen
+image bg campus = Transform("backgrounds/bg_campus.png", fit="cover")
+image bg classroom = Transform("backgrounds/bg_classroom.jpg", fit="cover")
+image bg ru = Transform("backgrounds/bg_ru.png", fit="cover")
+image bg library = Transform("backgrounds/bg_library.png", fit="cover")
+image bg cafeteria = Transform("backgrounds/bg_cafeteria.jpg", fit="cover")
+image bg courtyard = Transform("backgrounds/bg_courtyard.png", fit="cover")
+image bg corridor = Transform("backgrounds/bg_corridor.png", fit="cover")
 
-# WhatsApp background (placeholder - cor verde característica)
-image bg whatsapp = "#128C7E"
+# Special backgrounds
+image bg_start = "#fef7e6"  # Tela de início - bege claro
+image bg whatsapp = "#128C7E"  # WhatsApp - verde característico

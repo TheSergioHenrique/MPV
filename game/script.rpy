@@ -10,7 +10,7 @@
 label start:
 
     # Welcome screen
-    scene black with fade
+    scene bg_start with fade
 
     # Show title screen
     show text "{size=40}MOMENTOS PARA VIDA{/size}\n\n{size=20}Uma jornada sobre soft skills e amizades universitárias{/size}\n\n{size=16}Pressione ESPAÇO para continuar{/size}" at truecenter

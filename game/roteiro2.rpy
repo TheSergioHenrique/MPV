@@ -24,6 +24,11 @@ label roteiro2:
 
     scene bg courtyard with fade
 
+    hide lucas
+    hide camila
+    hide paulo
+    hide rafaela
+    hide professor
     show isabela neutral at center
 
     "Você está no pátio, revisando suas anotações de Cálculo 2."
@@ -185,15 +190,40 @@ label roteiro2_c:
 
     "Sala de estudos 3 - uma mesa grande, quadro branco, ar condicionado funcionando."
 
+    hide lucas
+    hide camila
+    hide paulo
+    hide rafaela
+    hide professor
     show isabela neutral at pos_5_farleft
+    hide isabela
+    hide camila
+    hide paulo
+    hide rafaela
+    hide professor
     show lucas neutral at pos_5_left
+    hide isabela
+    hide lucas
+    hide paulo
+    hide rafaela
+    hide professor
     show camila neutral at pos_5_center
+    hide isabela
+    hide lucas
+    hide camila
+    hide rafaela
+    hide professor
     show paulo neutral at pos_5_right
 
     "O grupo está reunido. Livros, cadernos, canetas e notebooks espalhados pela mesa."
 
     "Rafaela chega atrasada com uma sacola."
 
+    hide isabela
+    hide lucas
+    hide camila
+    hide paulo
+    hide professor
     show rafaela happy at pos_5_farright
 
     rafaela "Cheguei! E trouxe café, energético e chocolate!"
@@ -221,9 +251,29 @@ label roteiro2_c:
 
     scene bg library with fade
 
+    hide lucas
+    hide camila
+    hide paulo
+    hide rafaela
+    hide professor
     show isabela neutral at pos_4_farleft
+    hide isabela
+    hide camila
+    hide paulo
+    hide rafaela
+    hide professor
     show lucas thinking at pos_4_left
+    hide isabela
+    hide lucas
+    hide paulo
+    hide rafaela
+    hide professor
     show camila worried at pos_4_right
+    hide isabela
+    hide lucas
+    hide camila
+    hide rafaela
+    hide professor
     show paulo neutral at pos_4_farright
 
     "Duas horas e meia depois..."
@@ -243,18 +293,33 @@ label roteiro2_c:
 
     hide camila
 
+    hide isabela
+    hide lucas
+    hide camila
+    hide rafaela
+    hide professor
     show paulo neutral at center
 
     paulo "Cara, eu tô morto. Preciso de uma pausa."
 
     hide paulo
 
+    hide isabela
+    hide camila
+    hide paulo
+    hide rafaela
+    hide professor
     show lucas thinking at center
 
     lucas "Pausas são contraproducentes. Temos muito ainda pra revisar."
 
     hide lucas
 
+    hide isabela
+    hide lucas
+    hide camila
+    hide paulo
+    hide professor
     show rafaela sad at center
 
     rafaela "Mas a gente já tá aqui faz horas... Será que não é melhor descansar um pouco?"
@@ -294,7 +359,17 @@ label roteiro2_d1:
 
     pov "Lucas tem razão. Vamos aproveitar o embalo."
 
+    hide isabela
+    hide lucas
+    hide camila
+    hide rafaela
+    hide professor
     show paulo worried at left
+    hide isabela
+    hide lucas
+    hide paulo
+    hide rafaela
+    hide professor
     show camila worried at right
 
     paulo "Tá, mas eu preciso de pelo menos um café."
@@ -320,13 +395,28 @@ label roteiro2_d2:
 
     pov "Vamos fazer uma pausa de 15 minutos. Descansar a mente ajuda a absorver melhor."
 
+    hide isabela
+    hide camila
+    hide paulo
+    hide rafaela
+    hide professor
     show lucas thinking at center
 
     lucas "15 minutos apenas. Vamos marcar no celular."
 
     hide lucas
 
+    hide isabela
+    hide lucas
+    hide camila
+    hide paulo
+    hide professor
     show rafaela happy at left
+    hide isabela
+    hide lucas
+    hide camila
+    hide rafaela
+    hide professor
     show paulo happy at right
 
     rafaela "Boa! Vamos esticar as pernas!"
@@ -339,6 +429,11 @@ label roteiro2_d2:
 
     "No corredor da biblioteca."
 
+    hide isabela
+    hide lucas
+    hide paulo
+    hide rafaela
+    hide professor
     show camila sad at center
 
     "Você encontra Camila encostada na parede, olhando para o nada."
@@ -385,18 +480,33 @@ label roteiro2_d3:
 
     pov "Que tal mudar para Química? Trocar de assunto ajuda a refrescar a mente."
 
+    hide isabela
+    hide lucas
+    hide camila
+    hide paulo
+    hide professor
     show rafaela happy at center
 
     rafaela "Boa ideia! Vamos fazer Química agora!"
 
     hide rafaela
 
+    hide isabela
+    hide camila
+    hide paulo
+    hide rafaela
+    hide professor
     show lucas thinking at center
 
     lucas "Mas ainda não terminamos Cálculo..."
 
     hide lucas
 
+    hide lucas
+    hide camila
+    hide paulo
+    hide rafaela
+    hide professor
     show isabela neutral at center
 
     isabela "A gente volta pra Cálculo depois. Variação ajuda a fixar melhor."
@@ -421,12 +531,22 @@ label roteiro2_d4:
 
     pov "Antes de continuar, vamos ajudar a Camila a entender essa parte."
 
+    hide isabela
+    hide lucas
+    hide paulo
+    hide rafaela
+    hide professor
     show camila worried at center
 
     camila "Eu... vocês não precisam parar por minha causa..."
 
     hide camila
 
+    hide lucas
+    hide camila
+    hide paulo
+    hide rafaela
+    hide professor
     show isabela happy at center
 
     isabela "Claro que precisamos! Estamos juntos nisso."
@@ -437,6 +557,11 @@ label roteiro2_d4:
 
     "Vocês explicam de diferentes formas até ela entender."
 
+    hide isabela
+    hide lucas
+    hide paulo
+    hide rafaela
+    hide professor
     show camila happy at center
 
     camila "Ahh! Agora eu entendi! Muito obrigada!"
@@ -469,6 +594,11 @@ label roteiro2_e:
 
     "A biblioteca está quase vazia. Apenas alguns estudantes desesperados ainda estão por lá."
 
+    hide isabela
+    hide lucas
+    hide camila
+    hide rafaela
+    hide professor
     show paulo worried at center
 
     paulo "Pessoal, eu vou ter que ir. Tenho treino 6h da manhã."
@@ -485,14 +615,34 @@ label roteiro2_e:
 
     "E Rafaela, que está... dormindo com a cabeça sobre o livro."
 
+    hide isabela
+    hide lucas
+    hide camila
+    hide paulo
+    hide professor
     show rafaela neutral at center
 
     "Rafaela ronca suavemente."
 
     hide rafaela
 
+    hide isabela
+    hide camila
+    hide paulo
+    hide rafaela
+    hide professor
     show lucas neutral at left
+    hide lucas
+    hide camila
+    hide paulo
+    hide rafaela
+    hide professor
     show isabela worried at center
+    hide isabela
+    hide lucas
+    hide paulo
+    hide rafaela
+    hide professor
     show camila worried at right
 
     lucas "Vamos continuar. Ainda tem Termodinâmica."
@@ -539,6 +689,11 @@ label roteiro2_f1:
 
     pov "Vamos continuar. Estamos quase lá."
 
+    hide isabela
+    hide lucas
+    hide paulo
+    hide rafaela
+    hide professor
     show camila worried at center
 
     camila "Eu... ok..."
@@ -561,6 +716,11 @@ label roteiro2_f1:
 
     "As palavras nos livros começam a se misturar."
 
+    hide isabela
+    hide camila
+    hide paulo
+    hide rafaela
+    hide professor
     show lucas worried at center
 
     lucas "Eu... acho que não tô absorvendo mais nada..."
@@ -583,18 +743,33 @@ label roteiro2_f2:
 
     pov "Gente, vamos dormir. Estudar cansado não adianta nada."
 
+    hide lucas
+    hide camila
+    hide paulo
+    hide rafaela
+    hide professor
     show isabela happy at center
 
     isabela "Concordo totalmente."
 
     hide isabela
 
+    hide isabela
+    hide lucas
+    hide paulo
+    hide rafaela
+    hide professor
     show camila happy at center
 
     camila "Ai que alívio..."
 
     hide camila
 
+    hide isabela
+    hide camila
+    hide paulo
+    hide rafaela
+    hide professor
     show lucas worried at center
 
     lucas "Mas... a prova é amanhã..."
@@ -624,7 +799,17 @@ label roteiro2_f3:
 
     pov "Quem quiser pode ir. Eu fico aqui com o Lucas."
 
+    hide lucas
+    hide camila
+    hide paulo
+    hide rafaela
+    hide professor
     show isabela worried at left
+    hide isabela
+    hide lucas
+    hide paulo
+    hide rafaela
+    hide professor
     show camila worried at right
 
     isabela "Vocês têm certeza?"
@@ -647,6 +832,11 @@ label roteiro2_f3:
 
     scene bg library with fade
 
+    hide isabela
+    hide camila
+    hide paulo
+    hide rafaela
+    hide professor
     show lucas neutral at center
 
     "1h30 da madrugada."
@@ -674,6 +864,11 @@ label roteiro2_f4:
 
     pov "Lucas, olha pra você. Você está exausto."
 
+    hide isabela
+    hide camila
+    hide paulo
+    hide rafaela
+    hide professor
     show lucas worried at center
 
     lucas "Eu... eu tenho que estudar. Eu preciso tirar nota máxima."
@@ -727,9 +922,29 @@ label roteiro2_g:
 
     "Você chega para a prova de Cálculo 2."
 
+    hide lucas
+    hide camila
+    hide paulo
+    hide rafaela
+    hide professor
     show isabela neutral at Position(xalign=0.2, yalign=1.0)
+    hide isabela
+    hide camila
+    hide paulo
+    hide rafaela
+    hide professor
     show lucas neutral at Position(xalign=0.4, yalign=1.0)
+    hide isabela
+    hide lucas
+    hide paulo
+    hide rafaela
+    hide professor
     show camila neutral at Position(xalign=0.6, yalign=1.0)
+    hide isabela
+    hide lucas
+    hide camila
+    hide paulo
+    hide professor
     show rafaela neutral at Position(xalign=0.8, yalign=1.0)
 
     "O grupo está lá."
@@ -776,9 +991,29 @@ label roteiro2_final_a:
 
     "Uma semana depois - Resultados das provas"
 
+    hide lucas
+    hide camila
+    hide paulo
+    hide rafaela
+    hide professor
     show isabela happy at Position(xalign=0.2, yalign=1.0)
+    hide isabela
+    hide camila
+    hide paulo
+    hide rafaela
+    hide professor
     show lucas happy at Position(xalign=0.4, yalign=1.0)
+    hide isabela
+    hide lucas
+    hide paulo
+    hide rafaela
+    hide professor
     show camila happy at Position(xalign=0.6, yalign=1.0)
+    hide isabela
+    hide lucas
+    hide camila
+    hide paulo
+    hide professor
     show rafaela happy at Position(xalign=0.8, yalign=1.0)
 
     "O grupo comemora."
@@ -810,8 +1045,23 @@ label roteiro2_final_b:
 
     "Uma semana depois - Resultados das provas"
 
+    hide lucas
+    hide camila
+    hide paulo
+    hide rafaela
+    hide professor
     show isabela neutral at left
+    hide isabela
+    hide camila
+    hide paulo
+    hide rafaela
+    hide professor
     show lucas happy at center
+    hide isabela
+    hide lucas
+    hide paulo
+    hide rafaela
+    hide professor
     show camila happy at right
 
     "O grupo se reúne."
@@ -840,8 +1090,23 @@ label roteiro2_final_c:
 
     "Uma semana depois - Resultados das provas"
 
+    hide isabela
+    hide lucas
+    hide paulo
+    hide rafaela
+    hide professor
     show camila sad at left
+    hide isabela
+    hide camila
+    hide paulo
+    hide rafaela
+    hide professor
     show lucas worried at center
+    hide lucas
+    hide camila
+    hide paulo
+    hide rafaela
+    hide professor
     show isabela worried at right
 
     "O grupo parece abatido."
