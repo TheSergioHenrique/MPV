@@ -78,39 +78,39 @@ transform pos_5_farright:
 
 # Character Image Definitions
 # ISABELA - Organizada, prestativa, ambiciosa
-image isabela neutral = Transform("characters/isabela_neutral.png", zoom=5.0)
-image isabela happy = Transform("characters/isabela_happy.png", zoom=5.0)
-image isabela sad = Transform("characters/isabela_sad.png", zoom=5.0)
-image isabela worried = Transform("characters/isabela_worried.png", zoom=5.0)
-image isabela thinking = Transform("characters/isabela_thinking.png", zoom=5.0)
+image isabela neutral = "characters/isabela_neutral.png"
+image isabela happy = "characters/isabela_happy.png"
+image isabela sad = "characters/isabela_sad.png"
+image isabela worried = "characters/isabela_worried.png"
+image isabela thinking = "characters/isabela_thinking.png"
 
 # LUCAS - Competitivo, inteligente, impaciente
-image lucas neutral = Transform("characters/lucas_neutral.png", zoom=5.0)
-image lucas happy = Transform("characters/lucas_happy.png", zoom=5.0)
-image lucas sad = Transform("characters/lucas_sad.png", zoom=5.0)
-image lucas worried = Transform("characters/lucas_worried.png", zoom=5.0)
-image lucas thinking = Transform("characters/lucas_thinking.png", zoom=5.0)
+image lucas neutral = "characters/lucas_neutral.png"
+image lucas happy = "characters/lucas_happy.png"
+image lucas sad = "characters/lucas_sad.png"
+image lucas worried = "characters/lucas_worried.png"
+image lucas thinking = "characters/lucas_thinking.png"
 
 # CAMILA - Tímida, reflexiva, insegura
-image camila neutral = Transform("characters/camila_neutral.png", zoom=5.0)
-image camila happy = Transform("characters/camila_happy.png", zoom=5.0)
-image camila sad = Transform("characters/camila_sad.png", zoom=5.0)
-image camila worried = Transform("characters/camila_worried.png", zoom=5.0)
-image camila thinking = Transform("characters/camila_thinking.png", zoom=5.0)
+image camila neutral = "characters/camila_neutral.png"
+image camila happy = Transform("characters/camila_happy.png", zoom=1.5)
+image camila sad = "characters/camila_sad.png"
+image camila worried = "characters/camila_worried.png"
+image camila thinking = "characters/camila_thinking.png"
 
 # PAULO - Desorganizado, bem-humorado, inseguro academicamente
-image paulo neutral = Transform("characters/paulo_neutral.png", zoom=5.0)
-image paulo happy = Transform("characters/paulo_happy.png", zoom=5.0)
-image paulo sad = Transform("characters/paulo_sad.png", zoom=5.0)
-image paulo worried = Transform("characters/paulo_worried.png", zoom=5.0)
-image paulo thinking = Transform("characters/paulo_thinking.png", zoom=5.0)
+image paulo neutral = "characters/paulo_neutral.png"
+image paulo happy = "characters/paulo_happy.png"
+image paulo sad = "characters/paulo_sad.png"
+image paulo worried = "characters/paulo_worried.png"
+image paulo thinking = "characters/paulo_thinking.png"
 
 # RAFAELA - Extrovertida, emocional, dramática
-image rafaela neutral = Transform("characters/rafaela_neutral.png", zoom=5.0)
-image rafaela happy = Transform("characters/rafaela_happy.png", zoom=5.0)
-image rafaela sad = Transform("characters/rafaela_sad.png", zoom=5.0)
-image rafaela worried = Transform("characters/rafaela_worried.png", zoom=5.0)
-image rafaela thinking = Transform("characters/rafaela_thinking.png", zoom=5.0)
+image rafaela neutral = "characters/rafaela_neutral.png"
+image rafaela happy = "characters/rafaela_happy.png"
+image rafaela sad = "characters/rafaela_sad.png"
+image rafaela worried = "characters/rafaela_worried.png"
+image rafaela thinking = "characters/rafaela_thinking.png"
 
 # Background Definitions - Scaled to cover full screen
 image bg campus = Transform("backgrounds/bg_campus.png", fit="cover")
