@@ -190,31 +190,6 @@ label roteiro2_c:
 
     "Sala de estudos 3 - uma mesa grande, quadro branco, ar condicionado funcionando."
 
-    hide lucas
-    hide camila
-    hide paulo
-    hide rafaela
-    hide professor
-    show isabela neutral at pos_5_farleft
-    hide isabela
-    hide camila
-    hide paulo
-    hide rafaela
-    hide professor
-    show lucas neutral at pos_5_left
-    hide isabela
-    hide lucas
-    hide paulo
-    hide rafaela
-    hide professor
-    show camila neutral at pos_5_center
-    hide isabela
-    hide lucas
-    hide camila
-    hide rafaela
-    hide professor
-    show paulo neutral at pos_5_right
-
     "O grupo está reunido. Livros, cadernos, canetas e notebooks espalhados pela mesa."
 
     "Rafaela chega atrasada com uma sacola."
@@ -250,31 +225,6 @@ label roteiro2_c:
     hide text
 
     scene bg library with fade
-
-    hide lucas
-    hide camila
-    hide paulo
-    hide rafaela
-    hide professor
-    show isabela neutral at pos_4_farleft
-    hide isabela
-    hide camila
-    hide paulo
-    hide rafaela
-    hide professor
-    show lucas thinking at pos_4_left
-    hide isabela
-    hide lucas
-    hide paulo
-    hide rafaela
-    hide professor
-    show camila worried at pos_4_right
-    hide isabela
-    hide lucas
-    hide camila
-    hide rafaela
-    hide professor
-    show paulo neutral at pos_4_farright
 
     "Duas horas e meia depois..."
 
@@ -364,15 +314,16 @@ label roteiro2_d1:
     hide camila
     hide rafaela
     hide professor
-    show paulo worried at left
-    hide isabela
-    hide lucas
-    hide paulo
-    hide rafaela
-    hide professor
-    show camila worried at right
+    show paulo worried at center
 
     paulo "Tá, mas eu preciso de pelo menos um café."
+
+    hide paulo
+    hide isabela
+    hide lucas
+    hide rafaela
+    hide professor
+    show camila worried at center
 
     "Paulo se levanta e vai buscar café na máquina."
 
@@ -411,15 +362,16 @@ label roteiro2_d2:
     hide camila
     hide paulo
     hide professor
-    show rafaela happy at left
+    show rafaela happy at center
+
+    rafaela "Boa! Vamos esticar as pernas!"
+
+    hide rafaela
     hide isabela
     hide lucas
     hide camila
-    hide rafaela
     hide professor
-    show paulo happy at right
-
-    rafaela "Boa! Vamos esticar as pernas!"
+    show paulo happy at center
 
     "O grupo se dispersa. Alguns vão ao banheiro, outros pegam café."
 
@@ -922,31 +874,6 @@ label roteiro2_g:
 
     "Você chega para a prova de Cálculo 2."
 
-    hide lucas
-    hide camila
-    hide paulo
-    hide rafaela
-    hide professor
-    show isabela neutral at Position(xalign=0.2, yalign=1.0)
-    hide isabela
-    hide camila
-    hide paulo
-    hide rafaela
-    hide professor
-    show lucas neutral at Position(xalign=0.4, yalign=1.0)
-    hide isabela
-    hide lucas
-    hide paulo
-    hide rafaela
-    hide professor
-    show camila neutral at Position(xalign=0.6, yalign=1.0)
-    hide isabela
-    hide lucas
-    hide camila
-    hide paulo
-    hide professor
-    show rafaela neutral at Position(xalign=0.8, yalign=1.0)
-
     "O grupo está lá."
 
     if autocuidado >= 2:
@@ -990,31 +917,6 @@ label roteiro2_final_a:
     scene bg courtyard with fade
 
     "Uma semana depois - Resultados das provas"
-
-    hide lucas
-    hide camila
-    hide paulo
-    hide rafaela
-    hide professor
-    show isabela happy at Position(xalign=0.2, yalign=1.0)
-    hide isabela
-    hide camila
-    hide paulo
-    hide rafaela
-    hide professor
-    show lucas happy at Position(xalign=0.4, yalign=1.0)
-    hide isabela
-    hide lucas
-    hide paulo
-    hide rafaela
-    hide professor
-    show camila happy at Position(xalign=0.6, yalign=1.0)
-    hide isabela
-    hide lucas
-    hide camila
-    hide paulo
-    hide professor
-    show rafaela happy at Position(xalign=0.8, yalign=1.0)
 
     "O grupo comemora."
 

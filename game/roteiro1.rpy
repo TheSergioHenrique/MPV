@@ -25,7 +25,7 @@ label roteiro1:
     hide camila
     hide paulo
     hide rafaela
-    show professor at center
+    show professor neutral at center
 
     professor "Pessoal, atenção. Vou anunciar o trabalho final da disciplina."
 
@@ -50,15 +50,16 @@ label roteiro1:
     hide camila
     hide rafaela
     hide professor
-    show paulo happy at left
+    show paulo happy at center
+
+    paulo "Opa! Nosso grupo já tá formado!"
+
     hide isabela
     hide lucas
     hide camila
     hide paulo
     hide professor
-    show rafaela happy at right
-
-    paulo "Opa! Nosso grupo já tá formado!"
+    show rafaela happy at center
 
     rafaela "Que legal! A gente vai arrasar!"
 
@@ -122,31 +123,6 @@ label roteiro1_b1:
     scene bg courtyard with fade
 
     "16h00 - Pátio da faculdade"
-
-    hide lucas
-    hide camila
-    hide paulo
-    hide rafaela
-    hide professor
-    show isabela neutral at pos_4_farleft
-    hide isabela
-    hide camila
-    hide paulo
-    hide rafaela
-    hide professor
-    show lucas neutral at pos_4_left
-    hide isabela
-    hide lucas
-    hide paulo
-    hide rafaela
-    hide professor
-    show camila neutral at pos_4_right
-    hide isabela
-    hide lucas
-    hide camila
-    hide rafaela
-    hide professor
-    show paulo neutral at pos_4_farright
 
     "O grupo se reúne em uma mesa do pátio."
 
@@ -338,31 +314,6 @@ label roteiro1_c1:
 
     "18h30 - Biblioteca"
 
-    hide lucas
-    hide camila
-    hide paulo
-    hide rafaela
-    hide professor
-    show isabela neutral at pos_4_farleft
-    hide isabela
-    hide camila
-    hide paulo
-    hide rafaela
-    hide professor
-    show lucas neutral at pos_4_left
-    hide isabela
-    hide lucas
-    hide paulo
-    hide rafaela
-    hide professor
-    show camila neutral at pos_4_right
-    hide isabela
-    hide lucas
-    hide camila
-    hide rafaela
-    hide professor
-    show paulo neutral at pos_4_farright
-
     "O grupo está reunido em uma mesa grande."
 
     lucas "Vamos dividir as tarefas. Eu fico com a parte de gestão de energia renovável."
@@ -415,32 +366,14 @@ label roteiro1_c2:
 
     "18h30 - Biblioteca"
 
-    hide lucas
-    hide camila
-    hide paulo
-    hide rafaela
-    hide professor
-    show isabela happy at pos_4_farleft
-    hide isabela
-    hide camila
-    hide paulo
-    hide rafaela
-    hide professor
-    show lucas worried at pos_4_left
-    hide isabela
-    hide lucas
-    hide paulo
-    hide rafaela
-    hide professor
-    show camila happy at pos_4_right
-    hide isabela
-    hide lucas
-    hide camila
-    hide paulo
-    hide professor
-    show rafaela happy at pos_4_farright
-
     pov "Vamos trabalhar juntos. Assim todo mundo aprende tudo."
+
+    hide isabela
+    hide lucas
+    hide paulo
+    hide rafaela
+    hide professor
+    show camila happy at center
 
     camila "Eu acho ótimo! Me sinto mais segura assim."
 
@@ -467,31 +400,6 @@ label roteiro1_c3:
     scene bg library with fade
 
     "18h30 - Biblioteca"
-
-    hide lucas
-    hide camila
-    hide paulo
-    hide rafaela
-    hide professor
-    show isabela neutral at pos_4_farleft
-    hide isabela
-    hide camila
-    hide paulo
-    hide rafaela
-    hide professor
-    show lucas thinking at pos_4_left
-    hide isabela
-    hide lucas
-    hide paulo
-    hide rafaela
-    hide professor
-    show camila neutral at pos_4_right
-    hide isabela
-    hide lucas
-    hide camila
-    hide paulo
-    hide professor
-    show rafaela neutral at pos_4_farright
 
     pov "E se a gente dividir em duplas? Assim é mais eficiente que todos juntos, mas ninguém fica sozinho."
 
@@ -597,20 +505,14 @@ label roteiro1_d:
 
     "Reunião de acompanhamento do projeto."
 
+    "A tensão no ar é palpável."
+
     hide isabela
     hide camila
     hide paulo
     hide rafaela
     hide professor
-    show lucas worried at left
-    hide isabela
-    hide lucas
-    hide paulo
-    hide rafaela
-    hide professor
-    show camila sad at right
-
-    "A tensão no ar é palpável."
+    show lucas worried at center
 
     lucas "Camila, você não fez sua parte corretamente. Os dados estão todos errados."
 
@@ -683,26 +585,14 @@ label roteiro1_e1:
     hide camila
     with dissolve
 
-    hide lucas
-    hide camila
-    hide paulo
-    hide rafaela
-    hide professor
-    show isabela neutral at left
+    pov "Lucas, você está sendo muito duro. Camila está se esforçando."
+
     hide isabela
     hide camila
     hide paulo
     hide rafaela
     hide professor
     show lucas worried at center
-    hide isabela
-    hide lucas
-    hide paulo
-    hide rafaela
-    hide professor
-    show camila sad at right
-
-    pov "Lucas, você está sendo muito duro. Camila está se esforçando."
 
     lucas "Esforço sem resultado não adianta, Isabela."
 
@@ -741,25 +631,6 @@ label roteiro1_e2:
     hide camila
     with dissolve
 
-    hide lucas
-    hide camila
-    hide paulo
-    hide rafaela
-    hide professor
-    show isabela neutral at left
-    hide isabela
-    hide camila
-    hide paulo
-    hide rafaela
-    hide professor
-    show lucas neutral at center
-    hide isabela
-    hide lucas
-    hide paulo
-    hide rafaela
-    hide professor
-    show camila sad at right
-
     pov "Lucas tem razão, Camila. Você precisa se esforçar mais."
 
     hide isabela
@@ -797,15 +668,6 @@ label roteiro1_e3:
     hide camila
     hide paulo
     with dissolve
-
-    show isabela neutral at Position(xalign=0.3, yalign=1.0)
-    show lucas thinking at Position(xalign=0.5, yalign=1.0)
-    hide isabela
-    hide lucas
-    hide paulo
-    hide rafaela
-    hide professor
-    show camila worried at Position(xalign=0.7, yalign=1.0)
 
     pov "Ok, vamos respirar. Gritar não vai resolver nada."
 
@@ -865,25 +727,6 @@ label roteiro1_e4:
     hide camila
     with dissolve
 
-    hide lucas
-    hide camila
-    hide paulo
-    hide rafaela
-    hide professor
-    show isabela neutral at Position(xalign=0.3, yalign=1.0)
-    hide isabela
-    hide camila
-    hide paulo
-    hide rafaela
-    hide professor
-    show lucas thinking at Position(xalign=0.5, yalign=1.0)
-    hide isabela
-    hide lucas
-    hide paulo
-    hide rafaela
-    hide professor
-    show camila worried at Position(xalign=0.7, yalign=1.0)
-
     pov "Ok, vamos focar na solução. Temos uma semana."
 
     pov "Lucas, você pode revisar a parte da Camila e marcar o que precisa ser corrigido?"
@@ -934,15 +777,16 @@ label roteiro1_f:
         hide paulo
         hide rafaela
         hide professor
-        show lucas neutral at left
-        hide isabela
+        show lucas neutral at center
+        lucas "Camila, seu desenho dos espaços verdes ficou muito bom."
         hide lucas
+        hide isabela
         hide paulo
         hide rafaela
         hide professor
-        show camila happy at right
-        lucas "Camila, seu desenho dos espaços verdes ficou muito bom."
+        show camila happy at center
         camila "Sério? Obrigada, Lucas!"
+        hide camila
         "Você sorri, vendo a dinâmica mudar."
 
     elif lucas_rel < 2:
@@ -970,36 +814,11 @@ label roteiro1_g:
     hide camila
     hide paulo
     hide rafaela
-    show professor at center
+    show professor neutral at center
 
     professor "Grupo 3, vocês estão prontos?"
 
     hide professor
-
-    hide lucas
-    hide camila
-    hide paulo
-    hide rafaela
-    hide professor
-    show isabela neutral at pos_4_farleft
-    hide isabela
-    hide camila
-    hide paulo
-    hide rafaela
-    hide professor
-    show lucas neutral at pos_4_left
-    hide isabela
-    hide lucas
-    hide paulo
-    hide rafaela
-    hide professor
-    show camila neutral at pos_4_right
-    hide isabela
-    hide lucas
-    hide camila
-    hide rafaela
-    hide professor
-    show paulo neutral at pos_4_farright
 
     "O grupo vai à frente."
 
@@ -1046,38 +865,13 @@ label roteiro1_final_a:
     hide camila
     hide paulo
     hide rafaela
-    show professor at center
+    show professor neutral at center
 
     professor "Excelente trabalho, grupo 3. Nota: 9,5."
 
     professor "Vocês demonstraram não apenas conhecimento técnico, mas também excelente trabalho em equipe."
 
     hide professor
-
-    hide lucas
-    hide camila
-    hide paulo
-    hide rafaela
-    hide professor
-    show isabela happy at Position(xalign=0.2, yalign=1.0)
-    hide isabela
-    hide camila
-    hide paulo
-    hide rafaela
-    hide professor
-    show lucas happy at Position(xalign=0.4, yalign=1.0)
-    hide isabela
-    hide lucas
-    hide paulo
-    hide rafaela
-    hide professor
-    show camila happy at Position(xalign=0.6, yalign=1.0)
-    hide isabela
-    hide lucas
-    hide camila
-    hide paulo
-    hide professor
-    show rafaela happy at Position(xalign=0.8, yalign=1.0)
 
     "O grupo comemora."
 
@@ -1109,7 +903,7 @@ label roteiro1_final_b:
     hide camila
     hide paulo
     hide rafaela
-    show professor at center
+    show professor neutral at center
 
     professor "Bom trabalho, grupo 3. Nota: 8,5."
 
@@ -1117,26 +911,14 @@ label roteiro1_final_b:
 
     hide professor
 
-    hide lucas
-    hide camila
-    hide paulo
-    hide rafaela
-    hide professor
-    show isabela neutral at left
+    pov "8,5 não é ruim!"
+
     hide isabela
     hide camila
     hide paulo
     hide rafaela
     hide professor
     show lucas neutral at center
-    hide isabela
-    hide lucas
-    hide paulo
-    hide rafaela
-    hide professor
-    show camila happy at right
-
-    pov "8,5 não é ruim!"
 
     lucas "Poderia ter sido melhor se tivéssemos nos organizado desde o início."
 
@@ -1161,7 +943,7 @@ label roteiro1_final_c:
     hide camila
     hide paulo
     hide rafaela
-    show professor at center
+    show professor neutral at center
 
     professor "Nota: 7,5. O trabalho está correto tecnicamente, mas faltou coesão."
 
@@ -1172,15 +954,16 @@ label roteiro1_final_c:
     hide paulo
     hide rafaela
     hide professor
-    show lucas worried at left
-    hide isabela
+    show lucas worried at center
+
+    lucas "Eu sabia que devíamos ter trabalhado de forma diferente."
+
     hide lucas
+    hide isabela
     hide paulo
     hide rafaela
     hide professor
-    show camila sad at right
-
-    lucas "Eu sabia que devíamos ter trabalhado de forma diferente."
+    show camila sad at center
 
     camila "Desculpa... foi culpa minha..."
 

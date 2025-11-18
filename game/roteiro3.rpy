@@ -25,7 +25,7 @@ label roteiro3:
     hide camila
     hide paulo
     hide rafaela
-    show professor at center
+    show professor neutral at center
 
     professor "Bom dia. Antes de começar a matéria de hoje, tenho um aviso."
 
@@ -368,31 +368,6 @@ label roteiro3_c3:
 
     "11h15 - Biblioteca"
 
-    hide lucas
-    hide camila
-    hide paulo
-    hide rafaela
-    hide professor
-    show isabela neutral at pos_4_farleft
-    hide isabela
-    hide camila
-    hide paulo
-    hide rafaela
-    hide professor
-    show lucas neutral at pos_4_left
-    hide isabela
-    hide lucas
-    hide paulo
-    hide rafaela
-    hide professor
-    show camila neutral at pos_4_right
-    hide isabela
-    hide lucas
-    hide camila
-    hide rafaela
-    hide professor
-    show paulo neutral at pos_4_farright
-
     "O grupo inteiro se reúne: você, Isabela, Lucas, Camila, Paulo e Rafaela."
 
     pov "Gente, vamos estudar juntos. Temos pouco tempo, mas juntos conseguimos."
@@ -521,7 +496,7 @@ label roteiro3_final_a:
     hide camila
     hide paulo
     hide rafaela
-    show professor at center
+    show professor neutral at center
 
     professor "Isabela, parabéns. Você tirou a maior nota da turma. 9,8."
 
@@ -534,17 +509,18 @@ label roteiro3_final_a:
     hide paulo
     hide rafaela
     hide professor
-    show isabela happy at left
+    show isabela happy at center
+
+    isabela "Obrigada! Você também foi bem?"
+
     hide isabela
     hide camila
     hide paulo
     hide rafaela
     hide professor
-    show lucas happy at right
+    show lucas happy at center
 
     lucas "Parabéns, Isabela. Você merece."
-
-    isabela "Obrigada! Você também foi bem?"
 
     lucas "9,2. Nada mal."
 

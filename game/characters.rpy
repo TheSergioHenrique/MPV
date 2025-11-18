@@ -8,7 +8,7 @@ define lucas = Character("Lucas", color="#3498DB", image="lucas")
 define camila = Character("Camila", color="#E74C3C", image="camila")
 define paulo = Character("Paulo", color="#F39C12", image="paulo")
 define rafaela = Character("Rafaela", color="#E91E63", image="rafaela")
-define professor = Character("Professor", color="#7F8C8D")
+define professor = Character("Professor", color="#7F8C8D", image="professor")
 # Narrator using ADV style with empty string for portrait-mode compatibility
 define narrator = Character("")
 define pov = DynamicCharacter("povname", color="#2ECC71")
@@ -93,7 +93,7 @@ image lucas thinking = "characters/lucas_thinking.png"
 
 # CAMILA - Tímida, reflexiva, insegura
 image camila neutral = "characters/camila_neutral.png"
-image camila happy = Transform("characters/camila_happy.png", zoom=1.5)
+image camila happy = "characters/camila_happy.png"
 image camila sad = "characters/camila_sad.png"
 image camila worried = "characters/camila_worried.png"
 image camila thinking = "characters/camila_thinking.png"
@@ -112,6 +112,9 @@ image rafaela sad = "characters/rafaela_sad.png"
 image rafaela worried = "characters/rafaela_worried.png"
 image rafaela thinking = "characters/rafaela_thinking.png"
 
+# PROFESSOR - Professor da turma
+image professor neutral = "characters/Professor_Z.png"
+
 # Background Definitions - Scaled to cover full screen
 image bg campus = Transform("backgrounds/bg_campus.png", fit="cover")
 image bg classroom = Transform("backgrounds/bg_classroom.jpg", fit="cover")
@@ -123,4 +126,4 @@ image bg corridor = Transform("backgrounds/bg_corridor.png", fit="cover")
 
 # Special backgrounds
 image bg_start = "#fef7e6"  # Tela de início - bege claro
-image bg whatsapp = "#128C7E"  # WhatsApp - verde característico
+image bg whatsapp = Transform("backgrounds/bg_whatsapp.png", fit="cover")  # WhatsApp

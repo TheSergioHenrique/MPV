@@ -83,10 +83,11 @@ label prologo_2a:
 
     "Ela puxa você para perto dos outros três."
 
-    hide rafaela
-    show rafaela happy at pos_4_farleft
-    show isabela neutral at pos_4_left
-    show lucas thinking at pos_4_right
+    hide isabela
+    hide lucas
+    hide camila
+    hide paulo
+    show rafaela happy at center
     with dissolve
 
     rafaela "Essa é Isabela, Lucas e Paulo. Todos de Ambiental!"
@@ -205,15 +206,28 @@ label prologo_2b:
 
     "Ela te puxa gentilmente para perto dos outros."
 
-    hide rafaela
-    show rafaela happy at pos_4_farleft
-    show isabela neutral at pos_4_left
-    show lucas neutral at pos_4_right
+    hide isabela
+    hide lucas
+    hide camila
+    hide paulo
+    show rafaela happy at center
     with dissolve
 
     rafaela "Pessoal, mais uma da nossa turma!"
 
+    hide rafaela
+    hide lucas
+    hide camila
+    hide paulo
+    show isabela neutral at center
+
     isabela "Oi! Seja bem-vinda. Eu sou Isabela."
+
+    hide isabela
+    hide rafaela
+    hide camila
+    hide paulo
+    show lucas neutral at center
 
     lucas "Lucas."
 
@@ -241,9 +255,11 @@ label prologo_2c:
 
     "Ao entrar no prédio, você encontra o mesmo grupo na frente da sala A1-203."
 
-    show rafaela happy at pos_3_left
-    show isabela neutral at pos_3_center
-    show lucas neutral at pos_3_right
+    hide isabela
+    hide lucas
+    hide camila
+    hide paulo
+    show rafaela happy at center
 
     rafaela "Opa! Você é da nossa sala!"
 
@@ -295,19 +311,21 @@ label prologo_3:
 
     "De repente, uma garota de óculos e cabelo preso entra na sala, olhando para os lados com olhar perdido e nervoso."
 
+    hide isabela
     hide lucas
-    hide rafaela
     hide camila
-    show paulo neutral at pos_4_farleft
-    hide lucas
     hide rafaela
-    hide camila
-    hide paulo
-    show isabela neutral at pos_4_left
+    show paulo neutral at center
 
     paulo "Ela parece mais perdida que eu."
 
     "A garota encontra uma cadeira vazia no canto e se senta sozinha, olhando para baixo."
+
+    hide paulo
+    hide lucas
+    hide camila
+    hide rafaela
+    show isabela neutral at center
 
     isabela "Será que a gente devia chamar ela?"
 
@@ -432,13 +450,27 @@ label prologo_4a:
 
     "Camila pega sua mochila e segue você. Ao chegar no grupo, todos dão um sorriso acolhedor."
 
-    show rafaela happy at pos_4_farleft
-    show isabela happy at pos_4_left
-    show paulo happy at pos_4_right
+    hide isabela
+    hide lucas
+    hide camila
+    hide paulo
+    show rafaela happy at center
 
     rafaela "Oi, Camila! Seja bem-vinda ao caos! Eu sou Rafaela."
 
+    hide rafaela
+    hide lucas
+    hide camila
+    hide paulo
+    show isabela happy at center
+
     isabela "Oi! Isabela. Fica à vontade."
+
+    hide isabela
+    hide lucas
+    hide camila
+    hide rafaela
+    show paulo happy at center
 
     paulo "E aí! Paulo. Relaxa, a gente tá tudo perdido igual."
 

@@ -128,22 +128,23 @@ label micro2_isabela:
     return
 
 label micro2_paulo_rafaela:
+    "A mesa explode em risadas."
+
     hide isabela
     hide lucas
     hide camila
     hide rafaela
     hide professor
-    show paulo happy at left
+    show paulo happy at center
+
+    paulo "E aí! Vem se juntar à bagunça!"
+
+    hide paulo
     hide isabela
     hide lucas
     hide camila
-    hide paulo
     hide professor
-    show rafaela happy at right
-
-    "A mesa explode em risadas."
-
-    paulo "E aí! Vem se juntar à bagunça!"
+    show rafaela happy at center
 
     rafaela "Paulo tava contando da vez que ele se perdeu no campus!"
 
@@ -277,15 +278,16 @@ label micro5:
     hide paulo
     hide rafaela
     hide professor
-    show lucas worried at left
-    hide isabela
+    show lucas worried at center
+
+    lucas "Eu só disse que seu método não é eficiente!"
+
     hide lucas
+    hide isabela
     hide paulo
     hide rafaela
     hide professor
-    show camila sad at right
-
-    lucas "Eu só disse que seu método não é eficiente!"
+    show camila sad at center
 
     camila "Você sempre faz isso! Invalida o que eu faço!"
 
