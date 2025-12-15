@@ -265,7 +265,7 @@ screen achievements_screen():
         xalign 0.5
         yalign 0.5
         xsize 1000
-        ysize 1800
+        ysize 700
         padding (40, 40)
         background "#1A1A1AEE"
 
@@ -294,7 +294,7 @@ screen achievements_screen():
             # Lista de conquistas com scroll
             viewport:
                 xsize 920
-                ysize 1400
+                ysize 450
                 scrollbars "vertical"
                 mousewheel True
                 draggable True
@@ -480,7 +480,7 @@ screen achievements_screen():
             null height 20
 
             # Botão fechar
-            textbutton "VOLTAR" action Hide("achievements_screen"):
+            textbutton "VOLTAR" action Return():
                 xalign 0.5
                 xsize 400
                 ysize 70

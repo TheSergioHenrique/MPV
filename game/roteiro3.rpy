@@ -121,7 +121,7 @@ label roteiro3:
             jump roteiro3_b2
 
         "Sentir pânico crescendo e pensar em faltar à prova":
-            $ resiliencia -= 1
+            $ aumentar_skill("resiliencia", -1)
             jump roteiro3_b3
 
         "Decidir focar totalmente na aula atual para absorver o máximo possível":
@@ -632,4 +632,4 @@ label roteiro3_epilogo:
 
     $ roteiro3_completo = True
 
-    return
+    jump main_menu_start

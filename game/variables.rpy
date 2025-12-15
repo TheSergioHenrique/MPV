@@ -41,6 +41,11 @@ default resiliencia = 0
 default aprendizado_continuo = 0
 default negociacao = 0
 default autocuidado = 0
+default limites_saudaveis = 0
+default equilibrio_vida = 0
+default dedicacao = 0
+default independencia = 0
+default solidao = 0
 
 # ==========================================
 # ACHIEVEMENT/CONQUISTA FLAGS
@@ -129,27 +134,37 @@ init python:
             return rafaela_rel
 
     def aumentar_skill(skill, valor):
-        """Aumenta uma soft skill (máximo 5)"""
+        """Aumenta uma soft skill (máximo 5, mínimo 0)"""
         if skill == "comunicacao":
-            store.comunicacao = min(5, store.comunicacao + valor)
+            store.comunicacao = max(0, min(5, store.comunicacao + valor))
         elif skill == "empatia":
-            store.empatia = min(5, store.empatia + valor)
+            store.empatia = max(0, min(5, store.empatia + valor))
         elif skill == "lideranca":
-            store.lideranca = min(5, store.lideranca + valor)
+            store.lideranca = max(0, min(5, store.lideranca + valor))
         elif skill == "gestao_conflitos":
-            store.gestao_conflitos = min(5, store.gestao_conflitos + valor)
+            store.gestao_conflitos = max(0, min(5, store.gestao_conflitos + valor))
         elif skill == "trabalho_equipe":
-            store.trabalho_equipe = min(5, store.trabalho_equipe + valor)
+            store.trabalho_equipe = max(0, min(5, store.trabalho_equipe + valor))
         elif skill == "gestao_tempo":
-            store.gestao_tempo = min(5, store.gestao_tempo + valor)
+            store.gestao_tempo = max(0, min(5, store.gestao_tempo + valor))
         elif skill == "pensamento_critico":
-            store.pensamento_critico = min(5, store.pensamento_critico + valor)
+            store.pensamento_critico = max(0, min(5, store.pensamento_critico + valor))
         elif skill == "resiliencia":
-            store.resiliencia = min(5, store.resiliencia + valor)
+            store.resiliencia = max(0, min(5, store.resiliencia + valor))
         elif skill == "autocuidado":
-            store.autocuidado = min(5, store.autocuidado + valor)
+            store.autocuidado = max(0, min(5, store.autocuidado + valor))
         elif skill == "criatividade":
-            store.criatividade = min(5, store.criatividade + valor)
+            store.criatividade = max(0, min(5, store.criatividade + valor))
+        elif skill == "limites_saudaveis":
+            store.limites_saudaveis = max(0, min(5, store.limites_saudaveis + valor))
+        elif skill == "equilibrio_vida":
+            store.equilibrio_vida = max(0, min(5, store.equilibrio_vida + valor))
+        elif skill == "dedicacao":
+            store.dedicacao = max(0, min(5, store.dedicacao + valor))
+        elif skill == "independencia":
+            store.independencia = max(0, min(5, store.independencia + valor))
+        elif skill == "solidao":
+            store.solidao = max(0, min(5, store.solidao + valor))
 
     def get_relation_level(personagem):
         """Retorna o nível de relacionamento com descrição"""
@@ -181,8 +196,8 @@ init python:
 
     def unlock_achievement(ach_name):
         """Desbloqueia uma conquista"""
-        if not achievements[ach_name]:
-            achievements[ach_name] = True
+        if not store.achievements[ach_name]:
+            store.achievements[ach_name] = True
             renpy.show_screen("achievement_popup", ach_name)
 
     def get_skill_description(skill_name, level):

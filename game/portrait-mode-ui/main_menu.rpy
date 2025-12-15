@@ -66,15 +66,6 @@ screen main_menu():
                     background "#2ECC71"
                     hover_background "#27AE60"
 
-                textbutton "🏆 CONQUISTAS" action Show("achievements_screen"):
-                    xsize 500
-                    ysize 80
-                    xalign 0.5
-                    text_size 26
-                    text_xalign 0.5
-                    background "#9B59B6"
-                    hover_background "#8E44AD"
-
                 textbutton "⚙ CONFIGURAÇÕES" action ShowMenu("preferences"):
                     xsize 500
                     ysize 80

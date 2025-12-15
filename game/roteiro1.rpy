@@ -1015,4 +1015,4 @@ label roteiro1_epilogo:
 
     $ roteiro1_completo = True
 
-    jump roteiro2
+    jump main_menu_start

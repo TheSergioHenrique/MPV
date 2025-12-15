@@ -56,13 +56,6 @@ label main_menu_start:
     menu:
         "MOMENTOS PARA VIDA\n\nEscolha uma história para jogar:\n"
 
-        "▶ HISTÓRIAS PRINCIPAIS":
-            pass
-
-        "Prólogo: Primeiro Dia de Aula":
-            stop music fadeout 1.0
-            jump prologo
-
         "Roteiro 1: O Trabalho em Grupo":
             stop music fadeout 1.0
             jump roteiro1
@@ -75,36 +68,8 @@ label main_menu_start:
             stop music fadeout 1.0
             jump roteiro3
 
-        "★ CONHECER OS PERSONAGENS":
-            pass
-
-        "☕ Café com Lucas":
-            stop music fadeout 0.5
-            call side_lucas
-            jump main_menu_start
-
-        "🎨 Arte com Camila":
-            stop music fadeout 0.5
-            call side_camila
-            jump main_menu_start
-
-        "🎭 Teatro com Rafaela":
-            stop music fadeout 0.5
-            call side_rafaela
-            jump main_menu_start
-
-        "⚽ Fut com Paulo":
-            stop music fadeout 0.5
-            call side_paulo
-            jump main_menu_start
-
-        "📚 Biblioteca com Isabela":
-            stop music fadeout 0.5
-            call side_isabela
-            jump main_menu_start
-
-        "❤ Ver Status de Relações":
-            call screen status_screen
+        "🏆 Ver Conquistas":
+            call screen achievements_screen
             jump main_menu_start
 
         "❌ Sair":
