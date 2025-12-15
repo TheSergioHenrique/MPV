@@ -14,6 +14,9 @@ label roteiro3:
     # CENA A - "O ANÚNCIO"
     # ===================
 
+    # Play classroom music
+    play music classroom fadein 1.0
+
     scene bg classroom with fade
 
     "10h05 da manhã"
@@ -291,6 +294,9 @@ label roteiro3_b4:
 
 label roteiro3_c1:
 
+    # Play library music for focused study
+    play music library fadein 1.5
+
     scene bg library with fade
 
     "11h05 - Biblioteca"
@@ -318,6 +324,9 @@ label roteiro3_c1:
     # ===================
 
 label roteiro3_c2:
+
+    # Play study music for group work
+    play music noite_estudos fadein 1.5
 
     scene bg library with fade
 
@@ -363,6 +372,9 @@ label roteiro3_c2:
     # ===================
 
 label roteiro3_c3:
+
+    # Play teamwork music for group study
+    play music trabalho_grupo fadein 1.5
 
     scene bg library with fade
 
@@ -437,6 +449,9 @@ label roteiro3_c4:
 
 label roteiro3_d:
 
+    # Play decision/test music
+    play music decisao fadein 2.0
+
     scene bg classroom with fade
 
     "14h00 - Sala de aula"
@@ -487,6 +502,9 @@ label roteiro3_d:
 label roteiro3_final_a:
     # Final Excelente - Preparação Perfeita
 
+    # Play victory/growth music
+    play music crescimento fadein 1.5
+
     scene bg courtyard with fade
 
     "Uma semana depois..."
@@ -534,6 +552,9 @@ label roteiro3_final_a:
 
 label roteiro3_final_b:
     # Final Bom - Equilíbrio
+
+    # Play calm growth music
+    play music crescimento fadein 1.5
 
     scene bg courtyard with fade
 

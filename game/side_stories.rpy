@@ -13,6 +13,9 @@ label side_lucas:
         "Você já teve essa conversa com Lucas."
         return
 
+    # Play cafeteria music
+    play music cafeteria fadein 1.5
+
     scene bg cafeteria with fade
 
     "Cafeteria do Campus - 16h30 - Fim de tarde"
@@ -128,6 +131,9 @@ label side_camila:
         "Você já teve essa conversa com Camila."
         return
 
+    # Play campus/outdoor music
+    play music campus fadein 1.5
+
     scene bg courtyard with fade
 
     "Pátio do Campus - Tarde ensolarada"
@@ -229,6 +235,9 @@ label side_rafaela:
         "Você já teve essa conversa com Rafaela."
         return
 
+    # Play side stories music
+    play music side_stories fadein 1.5
+
     scene bg classroom with fade
 
     "Auditório - Noite"
@@ -310,6 +319,9 @@ label side_paulo:
     if side_paulo_done:
         "Você já teve essa conversa com Paulo."
         return
+
+    # Play campus/outdoor music
+    play music campus fadein 1.5
 
     scene bg courtyard with fade
 
@@ -402,6 +414,9 @@ label side_isabela:
     if side_isabela_done:
         "Você já teve essa conversa com Isabela."
         return
+
+    # Play library music
+    play music library fadein 1.5
 
     scene bg library with fade
 

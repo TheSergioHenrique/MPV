@@ -37,7 +37,7 @@ define gui.about = _p("""
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "PortraitMode"
+define build.name = "Momentos Para a Vida"
 
 
 ## Sounds and music ############################################################
@@ -143,7 +143,7 @@ default preferences.afm_time = 15
 ## This generally should not be changed, and if it is, should always be a
 ## literal string, not an expression.
 
-define config.save_directory = "PortraitMode-1563427651"
+define config.save_directory = "MomentosParaaVida-1563427651"
 
 
 ## Icon ########################################################################

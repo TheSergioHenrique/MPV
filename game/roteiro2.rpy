@@ -14,6 +14,9 @@ label roteiro2:
     # CENA A - "SEMANA DE PROVAS"
     # ===================
 
+    # Play campus music
+    play music campus fadein 1.0
+
     scene bg campus with fade
 
     "Segunda-feira - 17h30"
@@ -34,6 +37,9 @@ label roteiro2:
     "Você está no pátio, revisando suas anotações de Cálculo 2."
 
     "Seu celular vibra."
+
+    # Play WhatsApp sound
+    play music whatsapp fadein 0.5
 
     scene bg whatsapp with fade
 
@@ -122,6 +128,9 @@ label roteiro2_b2:
 
 label roteiro2_b3:
 
+    # Play WhatsApp sound
+    play music whatsapp fadein 0.5
+
     scene bg whatsapp
 
     pov "Que tal começar 18h? Quanto antes melhor"
@@ -183,6 +192,9 @@ label roteiro2_b4:
     # ===================
 
 label roteiro2_c:
+
+    # Play night study music
+    play music noite_estudos fadein 2.0
 
     scene bg library with fade
 
@@ -868,6 +880,9 @@ label roteiro2_g:
     pause 1.0
     hide text
 
+    # Change to decision/test music
+    play music decisao fadein 1.5
+
     scene bg classroom with fade
 
     "Sala de prova - 8h00"
@@ -913,6 +928,9 @@ label roteiro2_g:
 
 label roteiro2_final_a:
     # Final Excelente - Equilíbrio Perfeito
+
+    # Play growth/victory music
+    play music crescimento fadein 1.5
 
     scene bg courtyard with fade
 
@@ -1057,6 +1075,9 @@ label roteiro2_epilogo:
     # ===================
 
 label roteiro2_alone:
+
+    # Play library music for solo study
+    play music library fadein 1.5
 
     scene bg library with fade
 

@@ -9,6 +9,9 @@ label prologo:
     # CENA PRÓLOGO.1 - "A CHEGADA"
     # ===================
 
+    # Play prologue music
+    play music prologo fadein 2.0
+
     scene bg campus with fade
 
     "O ônibus para na frente do portão principal. Você desce com a mochila pesada nos ombros, o coração acelerado."
@@ -291,6 +294,9 @@ label prologo_2d:
 
 label prologo_3:
 
+    # Change to classroom music
+    play music classroom fadein 1.0
+
     scene bg classroom with fade
 
     "A sala está quase cheia. Cadeiras de braço, quadro branco gigante, ar condicionado fazendo barulho."
@@ -372,6 +378,9 @@ label prologo_3:
 # ===================
 
 label prologo_3_alone:
+
+    # Change to classroom music
+    play music classroom fadein 1.0
 
     scene bg classroom with fade
 

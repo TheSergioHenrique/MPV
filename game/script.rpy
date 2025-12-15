@@ -9,6 +9,9 @@
 
 label start:
 
+    # Play menu music
+    play music menu_principal fadein 1.0
+
     # Welcome screen
     scene bg_start with fade
 
@@ -45,6 +48,9 @@ label start:
 
 label main_menu_start:
 
+    # Play menu music
+    play music menu_principal fadein 1.0
+
     scene black with fade
 
     menu:
@@ -54,37 +60,46 @@ label main_menu_start:
             pass
 
         "Prólogo: Primeiro Dia de Aula":
+            stop music fadeout 1.0
             jump prologo
 
         "Roteiro 1: O Trabalho em Grupo":
+            stop music fadeout 1.0
             jump roteiro1
 
         "Roteiro 2: A Longa Noite de Estudos":
+            stop music fadeout 1.0
             jump roteiro2
 
         "Roteiro 3: A Prova Surpresa":
+            stop music fadeout 1.0
             jump roteiro3
 
         "★ CONHECER OS PERSONAGENS":
             pass
 
         "☕ Café com Lucas":
+            stop music fadeout 0.5
             call side_lucas
             jump main_menu_start
 
         "🎨 Arte com Camila":
+            stop music fadeout 0.5
             call side_camila
             jump main_menu_start
 
         "🎭 Teatro com Rafaela":
+            stop music fadeout 0.5
             call side_rafaela
             jump main_menu_start
 
         "⚽ Fut com Paulo":
+            stop music fadeout 0.5
             call side_paulo
             jump main_menu_start
 
         "📚 Biblioteca com Isabela":
+            stop music fadeout 0.5
             call side_isabela
             jump main_menu_start
 

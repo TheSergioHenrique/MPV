@@ -14,6 +14,9 @@ label roteiro1:
     # CENA A - "O ANÚNCIO DO TRABALHO"
     # ===================
 
+    # Play classroom music
+    play music classroom fadein 1.0
+
     scene bg classroom with fade
 
     "Quarta-feira - 15h30"
@@ -310,6 +313,9 @@ label roteiro1_b4:
 
 label roteiro1_c1:
 
+    # Change to library music for study session
+    play music library fadein 1.0
+
     scene bg library with fade
 
     "18h30 - Biblioteca"
@@ -362,6 +368,9 @@ label roteiro1_c1:
 
 label roteiro1_c2:
 
+    # Change to library music for collaborative work
+    play music trabalho_grupo fadein 1.0
+
     scene bg library with fade
 
     "18h30 - Biblioteca"
@@ -396,6 +405,9 @@ label roteiro1_c2:
     # ===================
 
 label roteiro1_c3:
+
+    # Change to teamwork music
+    play music trabalho_grupo fadein 1.0
 
     scene bg library with fade
 
@@ -500,6 +512,9 @@ label roteiro1_d:
     show text "{size=24}Uma semana depois...{/size}" at truecenter
     pause 1.0
     hide text
+
+    # Play conflict music
+    play music conflito fadein 1.5
 
     scene bg library with fade
 
@@ -762,6 +777,9 @@ label roteiro1_f:
     pause 1.0
     hide text
 
+    # Change to growth/determination music
+    play music crescimento fadein 1.5
+
     scene bg library with fade
 
     "O grupo trabalha intensamente."
@@ -804,6 +822,9 @@ label roteiro1_f:
     # ===================
 
 label roteiro1_g:
+
+    # Change to decision/presentation music
+    play music decisao fadein 1.0
 
     scene bg classroom with fade
 
