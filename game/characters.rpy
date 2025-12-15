@@ -3,15 +3,16 @@
 # ============================================
 
 # Character Definitions
-define isabela = Character("Isabela", color="#9B59B6", image="isabela")
-define lucas = Character("Lucas", color="#3498DB", image="lucas")
-define camila = Character("Camila", color="#E74C3C", image="camila")
-define paulo = Character("Paulo", color="#F39C12", image="paulo")
-define rafaela = Character("Rafaela", color="#E91E63", image="rafaela")
-define professor = Character("Professor", color="#7F8C8D", image="professor")
+# Cores mais vibrantes e distintas para melhor identificação
+define isabela = Character("Isabela", color="#BB88FF", image="isabela")  # Roxo claro vibrante
+define lucas = Character("Lucas", color="#4DB8FF", image="lucas")  # Azul céu vibrante
+define camila = Character("Camila", color="#FF6B6B", image="camila")  # Vermelho coral vibrante
+define paulo = Character("Paulo", color="#FFB347", image="paulo")  # Laranja vibrante
+define rafaela = Character("Rafaela", color="#FF69B4", image="rafaela")  # Rosa pink vibrante
+define professor = Character("Professor", color="#95A5A6", image="professor")  # Cinza claro
 # Narrator using ADV style with empty string for portrait-mode compatibility
 define narrator = Character("")
-define pov = DynamicCharacter("povname", color="#2ECC71")
+define pov = DynamicCharacter("povname", color="#2ECC71")  # Verde (jogador)
 
 # ============================================
 # CHARACTER POSITIONS - Evita sobreposição

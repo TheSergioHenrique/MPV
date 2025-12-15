@@ -571,7 +571,7 @@ label prologo_fim:
 
     scene black with fade
 
-    show text "{size=32}PRÓLOGO COMPLETO{/size}\n\n{size=20}Pressione 'R' para ver seu status de relações{/size}" at truecenter
+    show text "{size=32}PRÓLOGO COMPLETO{/size}\n\n{size=20}Toque na tela para continuar{/size}" at truecenter
     pause
     hide text
 

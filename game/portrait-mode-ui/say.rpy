@@ -28,6 +28,8 @@ image rect say alphamask gradient = At(Frame("portrait-mode-ui/ui/say-alphamask-
 
 screen say(who, what):
     zorder 45
+    style_prefix "say"
+
     vbox:
         yalign 1.0
         use say_dialogue(who, what)
@@ -35,10 +37,33 @@ screen say(who, what):
 screen say_dialogue(who, what):
     # style_prefix "say"
 
+    # Get character color from Character object
+    python:
+        char_color = pmui.say_name_text_color
+        if who:
+            # Try to get the character object and its color
+            try:
+                # Check common character names
+                char_map = {
+                    "Isabela": "#BB88FF",
+                    "Lucas": "#4DB8FF",
+                    "Camila": "#FF6B6B",
+                    "Paulo": "#FFB347",
+                    "Rafaela": "#FF69B4",
+                    "Professor": "#95A5A6",
+                }
+                # Also check if it's the POV character
+                if who == povname:
+                    char_color = "#2ECC71"
+                elif who in char_map:
+                    char_color = char_map[who]
+            except:
+                pass
+
     window:
         id "window"
         style "say_window"
-        background DynamicDisplayable(pmui.dialogbox, who=Text(who, style = "say_label"))
+        background DynamicDisplayable(pmui.dialogbox, who=Text(who, style = "say_label", color=char_color, substitute=False))
         text what id "what"
 
 # ## Make the namebox available for styling through the Character object.
@@ -62,7 +87,8 @@ style say_window:
     ysize pmui.scale_p(pmui.say_dialog_box_height - 30 * pmui.say_dialog_box_height/375 + pmui.say_dialog_box_bottom_offset)
 
 style say_label:
-    color pmui.say_name_text_color
+    # Color is now taken from the Character definition, not forced here
+    # color pmui.say_name_text_color
     size pmui.scale_p(pmui.say_name_text_size)
     bold pmui.say_name_text_bold
     kerning pmui.say_name_text_kerning

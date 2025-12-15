@@ -14,7 +14,7 @@ screen help():
 
     tag menu
 
-    default device = "keyboard"
+    default device = "touch"
 
     use game_menu(_("Help"), scroll="viewport"):
 
@@ -25,13 +25,15 @@ screen help():
 
             hbox:
 
-                textbutton _("Keyboard") action SetScreenVariable("device", "keyboard")
+                textbutton _("Controles Touch") action SetScreenVariable("device", "touch")
                 textbutton _("Mouse") action SetScreenVariable("device", "mouse")
 
                 if GamepadExists():
                     textbutton _("Gamepad") action SetScreenVariable("device", "gamepad")
 
-            if device == "keyboard":
+            if device == "touch":
+                use touch_help
+            elif device == "keyboard":
                 use keyboard_help
             elif device == "mouse":
                 use mouse_help
@@ -39,15 +41,38 @@ screen help():
                 use gamepad_help
 
 
+screen touch_help():
+
+    hbox:
+        label _("Toque simples")
+        text _("Avança o diálogo e ativa a interface.")
+
+    hbox:
+        label _("Toque longo")
+        text _("Abre o menu rápido.")
+
+    hbox:
+        label _("Deslizar para cima")
+        text _("Acessa o histórico de diálogos.")
+
+    hbox:
+        label _("Deslizar para baixo")
+        text _("Esconde/mostra a interface.")
+
+    hbox:
+        label _("Tocar nas escolhas")
+        text _("Seleciona a opção de diálogo.")
+
+
 screen keyboard_help():
 
     hbox:
-        label _("Enter")
-        text _("Advances dialogue and activates the interface.")
+        label _("Toque/Enter")
+        text _("Avança o diálogo e ativa a interface.")
 
     hbox:
-        label _("Space")
-        text _("Advances dialogue without selecting choices.")
+        label _("Toque/Space")
+        text _("Avança o diálogo sem selecionar escolhas.")
 
     hbox:
         label _("Arrow Keys")
@@ -89,8 +114,8 @@ screen keyboard_help():
 screen mouse_help():
 
     hbox:
-        label _("Left Click")
-        text _("Advances dialogue and activates the interface.")
+        label _("Toque/Clique esquerdo")
+        text _("Avança o diálogo e ativa a interface.")
 
     hbox:
         label _("Middle Click")
